@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.22pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{General Rules}{15}{0}{2}
+\beamer@subsectionintoc {2}{1}{T1A - Amateur Radio services; purpose of the amateur service, amateur-satellite service, operator/primary station license grant, where FCC rules are codified, basis and purpose of FCC rules, meanings of basic terms used in FCC rules}{16}{0}{2}
