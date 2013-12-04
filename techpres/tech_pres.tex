@@ -1,12 +1,14 @@
-\documentclass[12pt]{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{alltt}
+
 \graphicspath{{../sharedfiles/}}
-%\usepackage[size=A4]{beamerposter}
+
+%\usepackage[size=custom,width=27,height=15,scale=1]{beamerposter}
 \author{Anthony Odenthal, KE7OSN Amateur Extra}
 \title{Technician and General Class Amateur Radio \& Satellite Stuff}
 \AtBeginSection[]
@@ -26,6 +28,7 @@
 
 \usetheme{PaloAlto}
 \usecolortheme{beetle}
+\usepackage{mdwlist}
 
 \begin{document}
 
@@ -225,13 +228,13 @@ Clubs can get a "club callsign", and events can get an event callsign.
 \begin{frame}
 \frametitle{Callsigns}
 \begin{itemize}
-\item KE7OSN \pause
-\item N8GFO \pause -Yep \pause
-\item K7HZ \pause -That's an Extra \pause
+\item KE7OSN
+\item N8GFO \pause -Yep\pause
+\item K7HZ \pause -That's an Extra\pause
 \item VE6GLW \pause -That's Canadian, eh\pause
-\item KLOO \pause -That's a commercial station \pause
-\item WSJ509 \pause -Land Mobile, Benton County Sheriff \pause
-\item Mission Base \pause -What is known as a "tactical callsign"
+\item KLOO \pause -That's a commercial station\pause
+\item WSJ509 \pause -Land Mobile, Benton County Sheriff\pause
+\item Mission Base \pause -What is known as a "tactical callsign"\pause
 \end{itemize}
 \end{frame}
 
@@ -267,13 +270,13 @@ The ULS is an online database of FCC license information. A new licensee may use
 
 \begin{frame}
 \frametitle{Typical uses of a callsign}
-\begin{itemize}
-\item W7OSU This is KE7OSN \pause
-\item Net Control This is KE7OSN \pause
-\item This is W7OSU (Go Ahead) \pause
-\item CQ CQ CQ this is KE7OSN \pause
-\item KE7OSN monitoring \pause
-\item This is KF7FGE stroke (/) KE7OSN \pause
+\begin{itemize}[<+->]
+\item W7OSU This is KE7OSN
+\item Net Control This is KE7OSN
+\item This is W7OSU (Go Ahead)
+\item CQ CQ CQ this is KE7OSN
+\item KE7OSN monitoring
+\item This is KF7FGE stroke (/) KE7OSN
 \item Hey Bob, you around?
 \end{itemize}
 \end{frame}
@@ -412,46 +415,115 @@ We are PRIMARY users. We have first "rights". Secondary users must not cause us 
 
 \begin{frame}
 \frametitle{T1A}
-\begin{description}
-\scriptsize\item[T1A01 (D) [97.3(a)(4)] For whom is the Amateur Radio Service intended?]\hfil \\D. Persons who are interested in radio technique solely with a personal aim and without pecuniary interest \pause
-
-\item[T1A02 (C) [97.1] What agency regulates and enforces the rules for the Amateur Radio Service in the United States?] \hfil \\ C. The FCC \pause
-
-\item[T1A03 (D) Which part of the FCC rules contains the rules and regulations governing the Amateur Radio Service?]\hfil \\ D. Part 97 \pause
-
-\item[T1A04 (C) [97.3(a)(23)] Which of the following meets the FCC definition of harmful interference?]\pause \hfil \\ C. That which seriously degrades, obstructs, or repeatedly interrupts a radio communication service operating in accordance with the Radio Regulations \pause
-
-\item[T1A05 (D) [97.3(a)(40)] What is the FCC Part 97 definition of a space station?] \hfil \\  D. An amateur station located more than 50 km above the Earth’s surface \pause
-
-\item[T1A06 (C) [97.3(a)(43)] What is the FCC Part 97 definition of telecommand?]\hfil \\  C. A one-way transmission to initiate, modify or terminate functions of a device at a distance \pause
+\begin{description} %[<+->]
+\tiny
+\item[T1A01 For whom is the Amateur Radio Service intended?]\hfil \\D. Persons who are interested in radio technique solely with a personal aim and without pecuniary interest
+\item[T1A02 What agency regulates and enforces the rules for the Amateur Radio Service in the United States?] \hfil \\ C. The FCC
+\item[T1A03 Which part of the FCC rules contains the rules and regulations governing the Amateur Radio Service?]\hfil \\ D. Part 97
+\item[T1A04 Which of the following meets the FCC definition of harmful interference?] \hfil \\ C. That which seriously degrades, obstructs, or repeatedly interrupts a radio communication service operating in accordance with the Radio Regulations
+\item[T1A05 What is the FCC Part 97 definition of a space station?] \hfil \\  D. An amateur station located more than 50 km above the Earth’s surface
+\item[T1A06 What is the FCC Part 97 definition of telecommand?]\hfil \\  C. A one-way transmission to initiate, modify or terminate functions of a device at a distance
+\item[T1A07 What is the FCC Part 97 definition of telemetry?]\hfil \\ C. A one-way transmission of measurements at a distance from the measuring instrument
+\item[T1A08 Which of the following entities recommends transmit/receive channels and other parameters for auxiliary and repeater stations?]\hfil \\B. Frequency Coordinator
+\item[T1A09 Who selects a Frequency Coordinator?]\hfil \\ C. Amateur operators in a local or regional area whose stations are eligible to be auxiliary or repeater stations
+\item[T1A10 What is the FCC Part 97 definition of an amateur station?]\hfil \\ A. A station in an Amateur Radio Service consisting of the apparatus necessary for carrying on radio communications
+\item[T1A11 Which of the following stations transmits signals over the air from a remotereceive site to a repeater for retransmission?] \hfil \\C. Auxiliary station
 \end{description}
 \end{frame}
 
 \begin{frame}
-\frametitle{T1A}
-\begin{description}
-\scriptsize
-\item[T1A07 (C) [97.3(a)(45)] What is the FCC Part 97 definition of telemetry?]\hfil \\ C. A one-way transmission of measurements at a distance from the measuring instrument  \pause
-
-\item[T1A08 (B) [97.3(a)(22)] Which of the following entities recommends transmit/receive channels and other parameters for auxiliary and repeater stations?]\hfil \\  B. Frequency Coordinator \pause
-
-\item[T1A09 (C) [97.3(a)(22)] Who selects a Frequency Coordinator?]\hfil \\ C. Amateur operators in a local or regional area whose stations are eligible to be auxiliary or repeater stations  \pause
-
-\item[T1A10 (A) [97.3(a)(5)] What is the FCC Part 97 definition of an amateur station?]\hfil A. A station in an Amateur Radio Service consisting of the apparatus necessary for carrying on radio communications \pause
-
-\item[T1A11 (C) [97.3(a)(7)] Which of the following stations transmits signals over the air from a remotereceive site to a repeater for retransmission?] \hfil \\C. Auxiliary station
+\frametitle{T1B}
+\begin{description} %[<+->]
+\tiny
+\item[T1B01 What is the ITU?] \hfil \\ B. A United Nations agency for information and communication technology issues
+\item[T1B02 North American amateur stations are located in which ITU region?] \hfil \\ B. Region 2
+\item[T1B03 Which frequency is within the 6 meter band?] \hfil \\ B. 52.525 MHz
+\item[T1B04 Which amateur band are you using when your station is transmitting on 146.52MHz?] \hfil \\ A. 2 meter band
+\item[T1B05 Which 70 cm frequency is authorized to a Technician Class license holder operating in ITU Region 2? ]\hfil \\ C. 443.350 MHz
+\item[T1B06 Which 23 cm frequency is authorized to a Technician Class operator license?] \hfil \\ B. 1296 MHz
+\item[T1B07 What amateur band are you using if you are transmitting on 223.50 MHz?] \hfil \\ D. 1.25 meter band
+\item[T1B08 What do the FCC rules mean when an amateur frequency band is said to be available on a secondary basis?] \hfil \\ C. Amateurs may not cause harmful interference to primary users
+\item[T1B09 Why should you not set your transmit frequency to be exactly at the edge of an amateur band or sub-band?] \hfil \\ A. To allow for calibration error in the transmitter frequency display \hfil \\ B. So that modulation sidebands do not extend beyond the band edge \hfil \\ C. To allow for transmitter frequency drift \hfil \\ D. All of these choices are correct
+\item[T1B10 Which of the bands available to Technician Class operators have mode-restricted sub-bands?] \hfil\\ C. The 6 meter, 2 meter, and 1.25 meter bands
+\item[T1B11 What emission modes are permitted in the mode-restricted sub-bands at 50.0 to 50.1 MHz and 144.0 to 144.1 MHz? ]\hfil \\ A. CW only
 \end{description}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-hello world
+\frametitle{T1C}
+\hspace{-1cm}
+\begin{description}
+\tiny
+\item[T1C01 Which type of call sign has a single letter in both the prefix and suffix?]\hfil\\ C. Special event
+\item[T1C02 Which of the following is a valid US amateur radio station call sign?]\hfil\\ B. W3ABC
+\item[T1C03 What types of international communications are permitted by an FCC-licensed amateur station?] \hfil\\A. Communications incidental to the purposes of the amateur service and remarks of a personal character
+\item[T1C04 When are you allowed to operate your amateur station in a foreign country?]\hfil\\ A. When the foreign country authorizes it
+\item[T1C05 What must you do if you are operating on the 23 cm band and learn that you are interfering with a radiolocation  station outside the United States?] \hfil\\A. Stop operating or take steps to eliminate the harmful interference
+\item[T1C06 From which of the following may an FCC-licensed amateur station transmit, in addition to places where the FCC regulates communications?] \hfil\\D. From any vessel or craft located in international waters and documented or registered in the United
+States
+\item[T1C07 What may result when correspondence from the FCC is returned as undeliverable because the grantee failed to provide the correct mailing address?] \hfil\\B. Revocation of the station license or suspension of the operator license
+\item[T1C08 What is the normal term for an FCC-issued primary station/operator license grant?]\hfil\\ C. Ten years
+\item[T1C09 What is the grace period following the expiration of an amateur license within which the license may be renewed?] \hfil\\A. Two years
+\item[T1C10 How soon may you operate a transmitter on an amateur service frequency after you pass the examination required for your first amateur radio license?] \hfil\\C. As soon as your name and call sign appear in the FCC s ULS database
+\item[T1C11 If your license has expired and is still within the allowable grace period, may you continue to operate a transmitter on amateur service frequencies?] \hfil\\A. No, transmitting is not allowed until the ULS database shows that the license has been renewed
+\end{description}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-hello world
+\frametitle{T1D}
+\begin{description}[style=unboxed]
+\tiny
+\item[T1D01 With which countries are FCC-licensed amateur stations prohibited from exchanging communications?] \hfil\\A. Any country whose administration has notified the ITU that it objects to such communications
+\item[T1D02 On which of the following occasions may an FCC-licensed amateur station exchange messages with a U.S. military station?] \hfil\\A. During an Armed Forces Day Communications Test
+\item[T1D03 When is the transmission of codes or ciphers allowed to hide the meaning of a message transmitted by an amateur station?] \hfil\\C. Only when transmitting control commands to space stations or radio control craft
+\item[T1D04 What is the only time an amateur station is authorized to transmit music?] \hfil\\A. When incidental to an authorized retransmission of manned spacecraft communications
+\item[T1D05 When may amateur radio operators use their stations to notify other amateurs of the availability of equipment for sale or trade?] \hfil\\A. When the equipment is normally used in an amateur station and such activity is not conducted on a regular basis
+\item[T1D06 Which of the following types of transmissions are prohibited? ]\hfil\\A. Transmissions that contain obscene or indecent words or language
+\item[T1D08 When may the control operator of an amateur station receive compensation for operating the station?] \hfil\\B. When the communication is incidental to classroom instruction at an educational institution
+\item[T1D09 Under which of the following circumstances are amateur stations authorized to transmit signals related to broadcasting, program production, or news gathering, assuming no other means is available?]\hfil\\ A. Only where such communications directly relate to the immediate safety of human life or protection of property
+\item[T1D10 What is the meaning of the term broadcasting in the FCC rules for the amateur services?] \hfil\\D. Transmissions intended for reception by the general public
+\item[T1D11 Which of the following types of communications are permitted in the Amateur Radio Service?] \hfil\\A. Brief transmissions to make station adjustments
+\end{description}
 \end{frame}
+
+\begin{frame}
+\frametitle{T1E}
+\begin{description}
+\tiny
+\item[T1E01 When must an amateur station have a control operator?]\hfil\\A. Only when the station is transmitting
+\item[T1E02 Who is eligible to be the control operator of an amateur station?] \hfil\\D. Only a person for whom an amateur operator/primary station license grant appears in the FCC database or who is authorized for alien reciprocal operation
+\item[T1E03 Who must designate the station control operator?] \hfil\\A. The station licensee
+\item[T1E04 What determines the transmitting privileges of an amateur station?]\hfil\\D. The class of operator license held by the control operator
+\item[T1E05 What is an amateur station control point?] \hfil\\C. The location at which the control operator function is performed
+\item[T1E06 Under which of the following types of control is it permissible for the control operator to be at a location other than the control point?] \hfil\\B. Automatic control
+\item[T1E07 When the control operator is not the station licensee, who is responsible for the proper operation of the station?] \hfil\\D. The control operator and the station licensee are equally responsible
+\item[T1E08 What type of control is being used for a repeater when the control operator is not present at a control point?]\hfil\\C. Automatic control
+\item[T1E09 What type of control is being used when transmitting using a handheld radio?] \hfil\\D. Local control
+\item[T1E10 What type of control is used when the control operator is not at the station location but can indirectly manipulate the operating adjustments of a station?] \hfil\\B. Remote
+\item[T1E11 Who does the FCC presume to be the control operator of an amateur station, unless documentation to the contrary is in the station records?]\hfil\\D. The station licensee
+\end{description}
+\end{frame}
+
+\begin{frame}
+\frametitle{T1F}
+\begin{description}
+\tiny
+\item[T1F01 What type of identification is being used when identifying a station on the air as Race Headquarters ?]\hfil\\ A. Tactical call
+\item[T1F02 When using tactical identifiers, how often must your station transmit the stations FCC-assigned call sign?] \hfil\\C. Every ten minutes
+\item[T1F03 When is an amateur station required to transmit its assigned call sign?]\hfil\\D. At least every 10 minutes during and at the end of a contact
+\item[T1F04 Which of the following is an acceptable language for use for station identification when operating in a phone sub-band?] \hfil\\C. The English language
+\item[T1F05 What method of call sign identification is required for a station transmitting phone signals?] \hfil\\B. Send the call sign using CW or phone emission
+\item[T1F06 Which of the following formats of a self-assigned indicator is acceptable when identifying using a phone transmission?]\hfil\\D. All of these choices are correct
+\item[T1F07  Which of the following restrictions apply when appending a self-assigned call sign indicator?] \hfil\\D. It must not conflict with any other indicator specified by the FCC rules or with any call sign prefix assigned to another country
+\item[T1F08 When may a Technician Class licensee be the control operator of a station operating in an exclusive Extra Class operator segment of the amateur bands?] \hfil\\A. Never
+\item[T1F09 What type of amateur station simultaneously retransmits the signal of another amateur station on a different channel or channels?] \hfil\\C. Repeater station
+\item[T1F10 Who is accountable should a repeater inadvertently retransmit communications that violate the FCC rules?] \hfil\\A. The control operator of the originating station
+\item[T1F11 To which foreign stations do the FCC rules authorize the transmission of non-emergency third party communications?] \hfil\\A. Any station whose government permits such communications
+\item[T1F12 How many persons are required to be members of a club for a club station license to be issued by the FCC?] \hfil\\B. At least 4
+\item[T1F13 When must the station licensee make the station and its records available for FCC inspection?]\hfil\\ B. Any time upon request by an FCC representative
+\end{description}
+\end{frame}
+
 \section{Emergency Operations}
 \begin{frame}
 \frametitle{Title}
