@@ -18,14 +18,8 @@
 \tableofcontents[currentsection]
 \end{frame}
 }
-\AtBeginSubsection[]
-{
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection,currentsubsection]
- \end{frame}
-}
 
+%\setcounter{tocdepth}{2}
 \usetheme{PaloAlto}
 \usecolortheme{beetle}
 \usepackage{mdwlist}
@@ -39,7 +33,7 @@
 %\tableofcontents
 %\end{frame}
 
-\section{Introduction}
+\part{Introduction}
 
 \begin{frame}
 \frametitle{Welcome}
@@ -95,9 +89,9 @@ Some things you may want to look into as useful for studying
 Remember if I go too fast or you have questions, let me know.
 \end{frame}
 
-\section{General Rules}
-%\subsection{T1A - Amateur Radio services; purpose of the amateur service, amateur-satellite service, operator/primary station license grant, where FCC rules are codified, basis and purpose of FCC rules, meanings of basic terms used in FCC rules}
-\subsection{Who's In Charge}
+\part{FCC Rules, descriptions and definitions for the amateur radio service, operator and station license responsibilities}
+%\section{T1A - Amateur Radio services; purpose of the amateur service, amateur-satellite service, operator/primary station license grant, where FCC rules are codified, basis and purpose of FCC rules, meanings of basic terms used in FCC rules}
+\section{Who's In Charge}
 \begin{frame}
 \frametitle{Who's In charge}
 International Telecommunications Union (ITU)
@@ -140,7 +134,7 @@ Frequency Coordinator
 \end{center}
 \end{frame}
 
-\subsection{Part 97}
+\section{Part 97}
 
 \begin{frame}
 \frametitle{47 CRF 97.1 Basic Purpose}
@@ -185,7 +179,7 @@ Noncommercial means no "pecuniary interest". It is illegal to profit from the us
 \end{itemize}
 \end{frame}
 
-\subsection{licenses}
+\section{licenses}
 
 \begin{frame}
 \frametitle{Licenses}
@@ -212,7 +206,7 @@ There are four kinds of licenses, Individual hams hold both a "Station" and "Ope
 Clubs can get a "club callsign", and events can get an event callsign.
 \end{frame}
 
-\subsection{Callsigns}
+\section{Callsigns}
 
 \begin{frame}
 \frametitle{Callsigns}
@@ -301,7 +295,7 @@ KE7OSN clear
 \end{itemize}
 \end{frame}
 
-\subsection{frequencies}
+\section{frequencies}
 
 \begin{frame}
 \frametitle{Band Plan}
@@ -332,7 +326,7 @@ KE7OSN clear
 		\end{itemize}
 	\item 40 Meters
 		\begin{itemize}
-		\item 7.025-.125MHz: CW Only
+		\item 7.025-7.125MHz: CW Only
 		\end{itemize}
 	\item 15 Meters
 		\begin{itemize}
@@ -411,11 +405,11 @@ We are PRIMARY users. We have first "rights". Secondary users must not cause us 
 \end{itemize}
 \end{frame}
 
-\subsection{T1 Questions}
-
+\section{T1 Questions}
+\subsection{T1A}
 \begin{frame}
-\frametitle{T1A}
-\begin{itemize} %[<+->]
+\frametitle{T1A 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1A01 For whom is the Amateur Radio Service intended?}\hfil \\D. Persons who are interested in radio technique solely with a personal aim and without pecuniary interest
 \item\textbf{T1A02 What agency regulates and enforces the rules for the Amateur Radio Service in the United States?} \hfil \\ C. The FCC
@@ -429,11 +423,12 @@ We are PRIMARY users. We have first "rights". Secondary users must not cause us 
 \item\textbf{T1A10 What is the FCC Part 97 definition of an amateur station?}\hfil \\ A. A station in an Amateur Radio Service consisting of the apparatus necessary for carrying on radio communications
 \item\textbf{T1A11 Which of the following stations transmits signals over the air from a remotereceive site to a repeater for retransmission?} \hfil \\C. Auxiliary station
 \end{itemize}
+\tiny 11 of 396 2.7\%
 \end{frame}
-
+\subsection{T1B}
 \begin{frame}
-\frametitle{T1B}
-\begin{itemize} %[<+->]
+\frametitle{T1B 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1B01 What is the ITU?} \hfil \\ B. A United Nations agency for information and communication technology issues
 \item\textbf{T1B02 North American amateur stations are located in which ITU region?} \hfil \\ B. Region 2
@@ -447,11 +442,12 @@ We are PRIMARY users. We have first "rights". Secondary users must not cause us 
 \item\textbf{T1B10 Which of the bands available to Technician Class operators have mode-restricted sub-bands?} \hfil\\ C. The 6 meter, 2 meter, and 1.25 meter bands
 \item\textbf{T1B11 What emission modes are permitted in the mode-restricted sub-bands at 50.0 to 50.1 MHz and 144.0 to 144.1 MHz? }\hfil \\ A. CW only
 \end{itemize}
+\tiny 22 of 396 5.5\%
 \end{frame}
-
+\subsection{T1C}
 \begin{frame}
-\frametitle{T1C}
-\begin{itemize}
+\frametitle{T1C 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1C01 Which type of call sign has a single letter in both the prefix and suffix?}\hfil\\ C. Special event
 \item\textbf{T1C02 Which of the following is a valid US amateur radio station call sign?}\hfil\\ B. W3ABC
@@ -466,11 +462,12 @@ States
 \item\textbf{T1C10 How soon may you operate a transmitter on an amateur service frequency after you pass the examination required for your first amateur radio license?} \hfil\\C. As soon as your name and call sign appear in the FCC s ULS database
 \item\textbf{T1C11 If your license has expired and is still within the allowable grace period, may you continue to operate a transmitter on amateur service frequencies?} \hfil\\A. No, transmitting is not allowed until the ULS database shows that the license has been renewed
 \end{itemize}
+\tiny 33 of 396 8.3\%
 \end{frame}
-
+\subsection{T1D}
 \begin{frame}
-\frametitle{T1D}
-\begin{itemize}
+\frametitle{T1D 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1D01 With which countries are FCC-licensed amateur stations prohibited from exchanging communications?} \hfil\\A. Any country whose administration has notified the ITU that it objects to such communications
 \item\textbf{T1D02 On which of the following occasions may an FCC-licensed amateur station exchange messages with a U.S. military station?} \hfil\\A. During an Armed Forces Day Communications Test
@@ -483,11 +480,12 @@ States
 \item\textbf{T1D10 What is the meaning of the term broadcasting in the FCC rules for the amateur services?} \hfil\\D. Transmissions intended for reception by the general public
 \item\textbf{T1D11 Which of the following types of communications are permitted in the Amateur Radio Service?} \hfil\\A. Brief transmissions to make station adjustments
 \end{itemize}
+\tiny 44 of 396 11.1\%
 \end{frame}
-
+\subsection{T1E}
 \begin{frame}
-\frametitle{T1E}
-\begin{itemize}
+\frametitle{T1E 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1E01 When must an amateur station have a control operator?}\hfil\\A. Only when the station is transmitting
 \item\textbf{T1E02 Who is eligible to be the control operator of an amateur station?} \hfil\\D. Only a person for whom an amateur operator/primary station license grant appears in the FCC database or who is authorized for alien reciprocal operation
@@ -501,18 +499,19 @@ States
 \item\textbf{T1E10 What type of control is used when the control operator is not at the station location but can indirectly manipulate the operating adjustments of a station?} \hfil\\B. Remote
 \item\textbf{T1E11 Who does the FCC presume to be the control operator of an amateur station, unless documentation to the contrary is in the station records?}\hfil\\D. The station licensee
 \end{itemize}
+\tiny 55 of 396 13.8\%
 \end{frame}
-
+\subsection{T1F}
 \begin{frame}
-\frametitle{T1F}
-\begin{itemize}
+\frametitle{T1F 6 Questions from T1}
+\begin{itemize}[<+->]
 \tiny
 \item\textbf{T1F01 What type of identification is being used when identifying a station on the air as Race Headquarters ?}\hfil\\ A. Tactical call
 \item\textbf{T1F02 When using tactical identifiers, how often must your station transmit the stations FCC-assigned call sign?} \hfil\\C. Every ten minutes
 \item\textbf{T1F03 When is an amateur station required to transmit its assigned call sign?}\hfil\\D. At least every 10 minutes during and at the end of a contact
 \item\textbf{T1F04 Which of the following is an acceptable language for use for station identification when operating in a phone sub-band?} \hfil\\C. The English language
 \item\textbf{T1F05 What method of call sign identification is required for a station transmitting phone signals?} \hfil\\B. Send the call sign using CW or phone emission
-\item\textbf{T1F06 Which of the following formats of a self-assigned indicator is acceptable when identifying using a phone transmission?}\hfil\\D. All of these choices are correct
+\item\textbf{T1F06 Which of the following formats of a self-assigned indicator is acceptable when identifying using a phone transmission?}\hfil\\A. KL7CC stroke W3\\B. KL7CC slant W3\\C. KL7CC slash W3\\D. All of these choices are correct
 \item\textbf{T1F07  Which of the following restrictions apply when appending a self-assigned call sign indicator?} \hfil\\D. It must not conflict with any other indicator specified by the FCC rules or with any call sign prefix assigned to another country
 \item\textbf{T1F08 When may a Technician Class licensee be the control operator of a station operating in an exclusive Extra Class operator segment of the amateur bands?} \hfil\\A. Never
 \item\textbf{T1F09 What type of amateur station simultaneously retransmits the signal of another amateur station on a different channel or channels?} \hfil\\C. Repeater station
@@ -521,10 +520,12 @@ States
 \item\textbf{T1F12 How many persons are required to be members of a club for a club station license to be issued by the FCC?} \hfil\\B. At least 4
 \item\textbf{T1F13 When must the station licensee make the station and its records available for FCC inspection?}\hfil\\ B. Any time upon request by an FCC representative
 \end{itemize}
+\tiny 68 of 396 17.2\%
 \end{frame}
-\section{Operating Practices}
 
-\subsection{Emergency Operations}
+\part{Station operation; choosing an operating frequency, calling another station, test transmissions, use of minimum power, frequency use, band plans}
+
+\section{Emergency Operations}
 \begin{frame}
 \frametitle{97.403 Safety of life and protection of property}
 No provision of these rules prevents the use by an amateur station of any means of radio communication at its disposal to provide essential communication needs in connection with the immediate safety of human life and immediate protection of property \textbf<2->{when normal communication systems are not available.}
@@ -554,7 +555,7 @@ RACES – \textbf{R}adio \textbf{A}mateur \textbf{C}ivil \textbf{E}mergency \tex
 \end{itemize}
 \end{frame}
 
-\subsection{Nets and messages}
+\section{Nets and messages}
 \begin{frame}
 \frametitle{Disaster == Organized Chaos}
 To keep some organization to the use of frequencies and communications,  groups are organized into “nets”.
@@ -600,7 +601,7 @@ These messages use the NTS RadioGram form. The process is described in depth in 
 \centering \includegraphics[width=\textwidth]{radiogramform.png}
 \end{frame}
 
-\subsection{Radio Speak}
+\section{Radio Speak}
 \begin{frame}
 \frametitle{Types of radio short-hand}
 Amateur radio has its own codes, and slang. Much like 1337 or txt, this "shared language" makes it easier to communicate quickly, and efficently. Much of it comes from the days of telegraph and Morse Code.
@@ -671,71 +672,372 @@ There are two other special cases.
 \end{itemize}
 \end{frame}
 
-\subsection{T2 Questions}
+\section{Other Practices}
 
 \begin{frame}
-\frametitle{T2A}
-hello world
+\frametitle{Power}
+In most amateur bands the maximum legal limit for power output is 1500 Watts, PEP. PEP - Peak Envelope Power is the largest amplitude of a signal. On some bands the limit is lower, for each band there is also a point at which you have to do a safety evaluation of your station to avoid unsafe exposure. You should always use the minimal power required to do what you need to do.
+\end{frame}
+
+\section{T2 Questions}
+\subsection{T2A}
+\begin{frame}
+\frametitle{T2A 3 quesions from T2}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T2A01 What is the most common repeater frequency offset in the 2 meter band?}\\ B. plus or minus 600 kHz
+\item\textbf{T2A02 What is the national calling frequency for FM simplex operations in the 70 cm band?}\\ D. 446.000 MHz
+\item\textbf{T2A03 What is a common repeater frequency offset in the 70 cm band?}\\ A. Plus or minus 5 MHz
+\item\textbf{T2A04 What is an appropriate way to call another station on a repeater if you know the other station's call sign?}\\ B. Say the station's call sign then identify with your call sign
+\item\textbf{T2A05 What should you transmit when responding to a call of CQ?}\\ C. The other station's call sign followed by your call sign
+\item\textbf{T2A06 What must an amateur operator do when making on-air transmissions to test equipment or antennas?}\\ A. Properly identify the transmitting station
+\item\textbf{T2A07 Which of the following is true when making a test transmission?}\\ D. Station identification is required at least every ten minutes during the test and at the end
+\item\textbf{T2A08 What is the meaning of the procedural signal "CQ"?}\\ D. Calling any station
+\item\textbf{T2A09 What brief statement is often used in place of "CQ" to indicate that you are listening on a repeater?}\\ B. Say your call sign
+\item\textbf{T2A10 What is a band plan, beyond the privileges established by the FCC?}\\ A. A voluntary guideline for using different modes or activities within an amateur band
+\item\textbf{T2A11 What are the FCC rules regarding power levels used in the amateur bands?}\\ D. An amateur must use the minimum transmitter power necessary to carry out the desired communication
+\end{itemize}
+\tiny 79 of 396 19.9\%
+\end{frame}
+
+\subsection{T2B}
+\begin{frame}
+\frametitle{T2B 3 quesions from T2}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T2B01 What is the term used to describe an amateur station that is transmitting and receiving on the same frequency?}\\ C. Simplex communication
+\item\textbf{T2B02 What is the term used to describe the use of a sub-audible tone transmitted with normal voice audio to open the squelch of a receiver?}\\ D. CTCSS
+\item\textbf{T2B03 Which of the following describes the muting of receiver audio controlled solely by the presence or absence of an RF signal?}\\ B. Carrier squelch
+\item\textbf{T2B04 Which of the following common problems might cause you to be able to hear but not access a repeater even when transmitting with the proper offset?}\\ A. The repeater receiver requires audio tone burst for access\\B. The repeater receiver requires a CTCSS tone for access\\C. The repeater receiver may require a DCS tone sequence for access\\D. All of these choices are correct
+\item\textbf{T2B05 What determines the amount of deviation of an FM signal?}\\ C. The amplitude of the modulating signal
+\item\textbf{T2B06 What happens when the deviation of an FM transmitter is increased?}\\ A. Its signal occupies more bandwidth
+\item\textbf{T2B07 What should you do if you receive a report that your station s transmissions are causing splatter or interference on nearby frequencies?}\\ D. Check your transmitter for off-frequency operation or spurious emissions
+\item\textbf{T2B08 What is the proper course of action if your station s transmission unintentionally interferes with another station?}\\ B. Properly identify your transmission and move to a different frequency
+\item\textbf{T2B09 Which of the following methods is encouraged by the FCC when identifying your station when using phone?}\\ A. Use of a phonetic alphabet
+\item\textbf{T2B10 What is the "Q" signal used to indicate that you are receiving interference from other stations?}\\ A. QRM
+\item\textbf{T2B11 What is the "Q" signal used to indicate that you are changing frequency?}\\ B. QSY
+\end{itemize}
+\tiny 90 of 396 22.7\%
+\end{frame}
+
+\subsection{T2C}
+\begin{frame}
+\frametitle{T2C 3 quesions from T2}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T2C01 What set of rules applies to proper operation of your station when using amateur radio at the request of public service officials?}\\ C. FCC Rules
+\item\textbf{T2C04 What do RACES and ARES have in common?}\\ D. Both organizations may provide communications during emergencies
+\item\textbf{T2C05 What is the Radio Amateur Civil Emergency Service?}\\ B. A radio service using amateur stations for emergency management or civil defense communications
+\item\textbf{T2C06 Which of the following is common practice during net operations to get the immediate attention of the net control station when reporting an emergency?}\\ C. Begin your transmission with  Priority  or  Emergency  followed by your call sign
+\item\textbf{T2C07 What should you do to minimize disruptions to an emergency traffic net once you have checked in?}\\ C. Do not transmit on the net frequency until asked to do so by the net control station
+\item\textbf{T2C08 What is usually considered to be the most important job of an amateur operator when handling emergency traffic messages?}\\ A. Passing messages exactly as written, spoken or as received
+\item\textbf{T2C09 When may an amateur station use any means of radio communications at its disposal for essential communications in connection with immediate safety of human life and protection of property?}\\ B. When normal communications systems are not available
+\item\textbf{T2C10 What is the preamble in a formal traffic message?}\\ D. The information needed to track the message as it passes through the amateur radio traffic handling system
+\item\textbf{T2C11 What is meant by the term "check" in reference to a formal traffic message?}\\ A. The check is a count of the number of words or word equivalents in the text portion of the message
+\end{itemize}
+\tiny 101 of 396 25.5\%
+\end{frame}
+
+\part{Radio wave characteristics, radio and electromagnetic properties, propagation modes}
+\section{Electromagnetic Waves}
+\begin{frame}
+\frametitle{Electromagnetic Waves}
+Electromagnetic waves are energy waves that move through space, similar to the way waves move in water or sound through air.\\
+In a vacuum these waves move at the speed of light 299,792,458$m/s$ or 186,282.397$miles/second$. This is good as these waves are light.
 \end{frame}
 
 \begin{frame}
-\frametitle{T2B}
-hello world
+\frametitle{Speed of light}
+We can round up to 300,000,000$m/s$. Some distance measured in terms of light-time
+\begin{description}
+\item[Average distance between the Sun and Earth] - 8 minutes
+\item[GEO Satellite to Earth's Surface] - about a half second
+\item[Nearest other star to our Sun] 4.25 Years
+\item[Voyager Space probe to the Sun] at 18,884,401,200 Km from the sun? \only<2->{$\frac{\frac{18884401200Km}{300000Km/s}}{3600s}=Hours$} \only<3->{17:08:00-ish}
+\end{description}
 \end{frame}
 
 \begin{frame}
-\frametitle{T2C}
-hello world
+\frametitle{Frequency - not just an ok movie}
+We often refer to a wave by it's frequency. Frequency is the number of times a wave cycles in a given time. We use Hertz (Hz) which has the unites of $\frac{1}{Seconds}$.\\
+Middle C is 440Hz, or 440 cycles per second.\\
+KLOO-AM is 1.340MHz, or 1,340,000 cycles per second.
+\end{frame}
+
+\begin{frame}
+\frametitle{SI Prefixs}
+Sometimes it is a lot easier to shorten things up a bit.
+\begin{description}
+\item[Tera]T $10^{12}$ 1,000,000,000,000
+\item[Giga]G $10^9$ 1,000,000,000
+\item[Mega]M $10^6$ 1,000,000
+\item[Kilo]K $10^3$ 1,000
+\item[Deci]d $10^{-1}$ 0.1
+\item[Ceni]c $10^{-2}$ 0.01
+\item[Milli]m $10^{-3}$ 0.001
+\item[Micro]$\mu$ $10^{-6}$ 0.000001
+\item[Nano]n $10^{-9}$ 0.000000001
+\item[Pico]p $10^{-12}$ 0.000000000001
+\end{description}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wavelength}
+We also use wavelength to describe waves. The wavelength is the distance between two like points on the wave exactly one cycle apart, e.g.\ the distance between peaks.\\
+\begin{center}
+\includegraphics[width=0.85\textwidth,height=0.7\textheight]{wavelength.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{ElectoMagnetic}
+\begin{center}
+\includegraphics[height=0.5\textheight]{emwave.png}\\
+\end{center}
+Electromagnetic waves have two parts, one electric part, and one magnetic part. The magnetic part is rotated and phase shifted by 90$\deg$
+\end{frame}
+
+\begin{frame}
+\frametitle{Wavelength to frequency and back}
+It is easy to convert between wavelength and frequency just use the equation below.\\
+\only<2->{$Wavelength(meters) = \frac{300}{Freq. (MHz)}$\\}
+\only<3->{We'll practice on the next slide}
+\end{frame}
+
+\begin{frame}
+\frametitle{MATH!!!}
+\begin{itemize}
+\item Lets try to convert 7.025MHz into a wavelength to figure out which band it belongs to.\\
+\only<2->{$Wavelength(\lambda)=\frac{300}{7.025}$} \only<3->{that comes out to 42.7meters\\}
+\only<4->{That fits nicely in the 40meter band\\}
+\item<5-> Now lets try 223.50MHz\\
+$\frac{300}{223.50}=?$ \only<6->{1.35, for the 1.25meter band.}
+\end{itemize}
+\end{frame}
+
+\section{Propagation}
+\begin{frame}
+\frametitle{Line of sight}
+Just like light radio waves travel in a straight line.\\
+\only<2->{They also reflect off some things like light.\\}
+\only<3->{If there are multiple ways for radio waves to get between two points we call this Multipath, and it creates interference.\\}
+\only<4->{Reflections can be really useful when you don't have a direct line of sight.\\}
+\only<5->{Radio waves will also refract.\\}
+\end{frame}
+
+\begin{frame}
+\frametitle{Solar Wind}
+\begin{center}
+\includegraphics[width=\textwidth]{magfield.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Solar Radiation}
+Solar radiation charges atoms in the atmosphere, breaking loose electrons, to create ions, which can interact with radio waves.\\
+\begin{columns}
+\column{.3\textwidth}
+At night the electrons recombinde with their atoms. This means things change from day to night.
+\column{.7\textwidth}
+\includegraphics[width=\textwidth]{ions.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ionosphere}
+\begin{columns}
+\column{.6\textwidth}
+\includegraphics[height=.9\textheight]{ionosphere.png}
+\column{.4\textwidth}
+The parts of the atmosphere most affected by ionization are collectively called the Ionosphere!\\
+It has multiple layers, each interact differently with radio waves. The D layers mostly absorbs RF, while the E and F layers reflect.\\
+HF is is ruled by the ionosphere\\ VHF and up \ldots not so much.
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ionosphere}
+During the day the D layers absorbs a large chunk of HF, at night it goes away and signals bounce (refract) off the E and F layers.\\
+VHF and above mostly just goes through the ionosphere\ldots\\
+But sometimes at night there is just enough E layer to refract VHF signals. We call this "Sporadic E"
+\end{frame}
+
+\begin{frame}
+\frametitle{Auroras and Meteor Showers}
+The auroras are a visible sign of ionization, as they move they can cause received signals to sound fluttery.\\
+Meteor showers leave short lived trails of ionized gases, that can refract signals, these effects are impossible to predict and last seconds.\\
+You can even bounce radio signals off the moon!
+\end{frame}
+
+\begin{frame}
+\frametitle{Tropospheric Ducting}
+\begin{center}
+\includegraphics[width=\textwidth]{troposhpere.png}
+\end{center}
+Air can refract electromagnetic radiation. A temperature inversion (warm air above cold) can cause VHF signals to refract and travel long distances.\\
+This is called "Tropospheric Ducting" and often happens between here and Hawaii, it mostly affects VHF.
+\end{frame}
+
+\begin{frame}
+\frametitle{Knife Edge}
+\begin{center}
+\includegraphics[height=.9\textheight]{knifeedge.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Polarization}
+
+\end{frame}
+\section{T3 Questions}
+\subsection{T3A}
+\begin{frame}
+\frametitle{Title}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T3A01 What should you do if another operator reports that your station s 2 meter signals were strong just a moment ago, but now they are weak or distorted?}\\ D. Try moving a few feet, as random reflections may be causing multi-path distortion
+\item\textbf{T3A02 (B) Why are UHF signals often more effective from inside buildings than VHF signals?}\\ B. The shorter wavelength allows them to more easily penetrate the structure of buildings
+\item\textbf{T3A03 What antenna polarization is normally used for long-distance weak-signal CW and SSB contacts using the VHF and UHF bands?}\\ C. Horizontal
+\item\textbf{T3A04 What can happen if the antennas at opposite ends of a VHF or UHF line of sight radio link are not using the same polarization?}\\ B. Signals could be significantly weaker
+\item\textbf{T3A05 When using a directional antenna, how might your station be able to access a distant repeater if buildings or obstructions are blocking the direct line of sight path?}\\ B. Try to find a path that reflects signals to the repeater
+\item\textbf{T3A06 What term is commonly used to describe the rapid fluttering sound sometimes heard from mobile stations that are moving while transmitting?}\\ B. Picket fencing
+\item\textbf{T3A07 What type of wave carries radio signals between transmitting and receiving stations?}\\ A. Electromagnetic
+\item\textbf{T3A08 What is the cause of irregular fading of signals from distant stations during times of generally good reception?}\\ C. Random combining of signals arriving via different path lengths
+\item\textbf{T3A09 Which of the following is a common effect of "skip" reflections between the Earth and the ionosphere?}\\ B. The polarization of the original signal is randomized
+\item\textbf{T3A10 What may occur if VHF or UHF data signals propagate over multiple paths?}\\ D. Error rates are likely to increase
+\item\textbf{T3A11 Which part of the atmosphere enables the propagation of radio signals around the world?}\\ C. The ionosphere
+\end{itemize}
+\end{frame}
+\subsection{T3B}
+\begin{frame}
+\frametitle{Title}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T3B01 What is the name for the distance a radio wave travels during one complete cycle?}\\ C. Wavelength
+\item\textbf{T3B02 What term describes the number of times per second that an alternating current reverses direction?}\\ D. Frequency
+\item\textbf{T3B03 What are the two components of a radio wave?}\\ C. Electric and magnetic fields
+\item\textbf{T3B04 How fast does a radio wave travel through free space?}\\ A. At the speed of light
+\item\textbf{T3B05 How does the wavelength of a radio wave relate to its frequency?}\\ B. The wavelength gets shorter as the frequency increases
+\item\textbf{T3B06 What is the formula for converting frequency to wavelength in meters?}\\ D. Wavelength in meters equals 300 divided by frequency in megahertz
+\item\textbf{T3B07 What property of radio waves is often used to identify the different frequency bands?}\\ A. The approximate wavelength
+\item\textbf{T3B08 What are the frequency limits of the VHF spectrum?}\\ B. 30 to 300 MHz
+\item\textbf{T3B09 What are the frequency limits of the UHF spectrum?}\\ D. 300 to 3000 MHz
+\item\textbf{T3B10 What frequency range is referred to as HF?}\\ C. 3 to 30 MHz
+\item\textbf{T3B11 What is the approximate velocity of a radio wave as it travels through free space?}\\ B. 300,000,000 meters per second
+\end{itemize}
+\end{frame}
+\subsection{T3C}
+\begin{frame}
+\frametitle{Title}
+\begin{itemize}[<+->]
+\tiny
+\item\textbf{T3C01 Why are "direct" (not via a repeater) UHF signals rarely heard from stations outside your local coverage area?}\\ C. UHF signals are usually not reflected by the ionosphere
+\item\textbf{T3C02 Which of the following might be happening when VHF signals are being received from long distances?}\\ D. Signals are being refracted from a sporadic E layer
+\item\textbf{T3C03 What is a characteristic of VHF signals received via auroral reflection?}\\ B. The signals exhibit rapid fluctuations of strength and often sound distorted
+\item\textbf{T3C04 Which of the following propagation types is most commonly associated with occasional strong over-the-horizon signals on the 10, 6, and 2 meter bands?}\\ B. Sporadic E
+\item\textbf{T3C05 What is meant by the term "knife-edge" propagation?}\\ C. Signals are partially refracted around solid objects exhibiting sharp edges
+\item\textbf{T3C06 What mode is responsible for allowing over-the-horizon VHF and UHF communications to ranges of approximately 300 miles on a regular basis?}\\ A. Tropospheric scatter
+\item\textbf{T3C07 What band is best suited to communicating via meteor scatter?}\\ B. 6 meters
+\item\textbf{T3C08 What causes "tropospheric ducting"?}\\ D. Temperature inversions in the atmosphere
+\item\textbf{T3C09 What is generally the best time for long-distance 10 meter band propagation?}\\ A. During daylight hours
+\item\textbf{T3C10 What is the radio horizon?}\\ A. The distance at which radio signals between two points are effectively blocked by the curvature of the Earth
+\item\textbf{T3C11 Why do VHF and UHF radio signals usually travel somewhat farther than the visual line of sight distance between two stations?}\\ C. The Earth seems less curved to radio waves than to light
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Title}
-hello world
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
 \end{frame}
 
 %
