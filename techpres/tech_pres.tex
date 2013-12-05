@@ -225,7 +225,7 @@ Clubs can get a "club callsign", and events can get an event callsign.
 \item KE7OSN
 \item N8GFO \pause -Yep\pause
 \item K7HZ \pause -That's an Extra\pause
-\item VE6GLW \pause -That's Canadian, eh\pause
+\item VE6GLW \pause -That's Canadian\pause
 \item KLOO \pause -That's a commercial station\pause
 \item WSJ509 \pause -Land Mobile, Benton County Sheriff\pause
 \item Mission Base \pause -What is known as a "tactical callsign"\pause
@@ -300,7 +300,7 @@ KE7OSN clear
 \begin{frame}
 \frametitle{Band Plan}
 \begin{center}
-\includegraphics[width=\textwidth]{hambandscolor.pdf}
+\includegraphics[height=.9\textheight]{hambandscolor.pdf}
 \end{center}
 \end{frame}
 
@@ -668,7 +668,7 @@ W7QH becomes "Whiskey 7 Quebec Hotel"
 There are two other special cases.
 \begin{itemize}
 \item CQ is the standard calling call. Think of it as Seek You, though no one really knows where it comes from. It is common to add extra stuff depending on the situation. You might hear CQ JOTA, CQ Field Day, CQ Contest, CQ DX, CQ Oregon. This lets people pick who they are looking for. A common general CQ would sound like "CQ CQ CQ this is KE7OSN calling CQ CQ CQ"
-\item The other thing that comes up is the number 73, this goes back to the old Western Union Telegraph 92 codes, these were numbers that could be used in place of certian phrases, most of them dealing with packages or trains. 73 means "Beast Regards" and is generally used as "goodbye"
+\item The other thing that comes up is the number 73, this goes back to the old Western Union Telegraph 92 codes, these were numbers that could be used in place of certain phrases, most of them dealing with packages or trains. 73 means "Beast Regards" and is generally used as "goodbye"
 \end{itemize}
 \end{frame}
 
@@ -837,7 +837,7 @@ Just like light radio waves travel in a straight line.\\
 Solar radiation charges atoms in the atmosphere, breaking loose electrons, to create ions, which can interact with radio waves.\\
 \begin{columns}
 \column{.3\textwidth}
-At night the electrons recombinde with their atoms. This means things change from day to night.
+At night the electrons recombined with their atoms. This means things change from day to night.
 \column{.7\textwidth}
 \includegraphics[width=\textwidth]{ions.png}
 \end{columns}
@@ -1010,35 +1010,50 @@ If your mic is turned up to loud your signal may distort. You can set the freque
 \end{frame}
 
 \part{Electrical principles, math for electronics, electronic principles, Ohm s Law}
-
+\section{Ohm's Law}
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Ohm, Ohm on the range}
+Most metals are good at conducting electricity, this means they allow electrons to move around. We make wires that allow us to move electrons from one specific place to another.
+\end{frame}
+\subsection{Current}
+\begin{frame}
+\frametitle{Current}
+The movement of electrons is called \textbf{Current}. We measure current in the Ampere, aka the Amp, aka A (or I).\\
+Current that moves in only one direction is called \textbf{Direct Current (DC)}. Current that changes direction regularly is called \textbf{Alternating Current (AC)}.\\
+A device that measures current is an ammeter.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Ideas of current}
+\begin{center}
+\includegraphics[height=.9\textheight]{acdc.jpg}<1>
+\includegraphics[width=\textwidth]{acdc.png}<2>
+\end{center}
+\end{frame}
 
+\subsection{Voltage}
+\begin{frame}
+\frametitle{The Electromotive Force}
+The force that causes electrons to flow is called \only{\ldots}<1>\pause \textbf{The Electromotive Force}.\\
+ We measure this force as \only{\ldots}<2>\pause\textbf{ Voltage}, or \textbf{V}.\\
+Voltage is measured with a \only{\ldots}<3>\pause \textbf{Voltmeter}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Voltage}
+Electrons like to spread out. It's their "natural desire" to not get bunched up that causes voltage. There can be voltage without current, but not current without voltage.\\
+An unconnected battery has a voltage, but until it is hooked up to a complete circuit the electrons can't go anywhere.
 \end{frame}
 
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
+\subsection{Resistance}
 
 \begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
+\frametitle{The Resistor}
+The resistor, resists or impedes the flow of electrons.\\
+The unit of resistance is the Ohm, or $\Omega$. \pause If that looks Greek, that's because it is, that Omega, a letter from the Greek alphabet\\ \only<3>{Now sing along \ldots \\ Alpha $A$, Beta $B$, Gamma $\Gamma$, Delta $\Delta$, Epsilon $E$, Zeta $Z$, Eta $H$, Theta $\Theta$, Iota $I$. \\Anyone? } \only{Resistance is measured with an ohmmeter.\\}<4->
+\begin{center}
+\includegraphics[width=.25\textwidth]{viva.png}<4->
+\end{center}
 \end{frame}
 
 \begin{frame}
