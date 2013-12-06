@@ -1042,18 +1042,214 @@ Voltage is measured with a \only{\ldots}<3>\pause \textbf{Voltmeter}
 \begin{frame}
 \frametitle{Voltage}
 Electrons like to spread out. It's their "natural desire" to not get bunched up that causes voltage. There can be voltage without current, but not current without voltage.\\
-An unconnected battery has a voltage, but until it is hooked up to a complete circuit the electrons can't go anywhere.
+An unconnected battery has a voltage, but until it is hooked up to a complete circuit the electrons can't go anywhere.\\
+Voltage is the difference in electrical potential between two points. Think of something falling down stairs.
 \end{frame}
 
 \subsection{Resistance}
 
 \begin{frame}
 \frametitle{The Resistor}
-The resistor, resists or impedes the flow of electrons.\\
-The unit of resistance is the Ohm, or $\Omega$. \pause If that looks Greek, that's because it is, that Omega, a letter from the Greek alphabet\\ \only<3>{Now sing along \ldots \\ Alpha $A$, Beta $B$, Gamma $\Gamma$, Delta $\Delta$, Epsilon $E$, Zeta $Z$, Eta $H$, Theta $\Theta$, Iota $I$. \\Anyone? } \only{Resistance is measured with an ohmmeter.\\}<4->
+Resistance, impedes the flow of electrons.\\
+The unit of resistance is the Ohm, or $\Omega$. \pause If that looks Greek, that's because it is, that Omega, a letter from the Greek alphabet\\ \only<3>{Now sing along \ldots \\ Alpha $A$, Beta $B$, Gamma $\Gamma$, Delta $\Delta$, Epsilon $E$, Zeta $Z$, Eta $H$, Theta $\Theta$, Iota $I$. \\Anyone? } \only{Resistance is measured with an ohmmeter.\\ Never use an ohmmeter on a live circuit}<4->
 \begin{center}
 \includegraphics[width=.25\textwidth]{viva.png}<4->
 \end{center}
+\end{frame}
+
+\subsection{Ohms Law}
+\begin{frame}
+\frametitle{Ohms Law}
+The voltage across a resistor is equal to the resistance times the current. $V=IR$.\\
+If we take a 9volt battery and connect it to a 90$\Omega$ resistor, what is the current through it?\pause\\
+$V=IR\to I=\frac{V}{R}\to I=\frac{9}{90}$\pause$\to 0.1=\frac{9}{90}$ 0.1 Amps, or 100 milliamps.
+\end{frame}
+
+\begin{frame}
+\frametitle{Power}
+When current flows through an impedance it dissipates energy as "POWER". Power is measured Watts (W).\\
+The equation for power is $P=IV$\pause Lets try with our prior example, we had 9volts and .1amps.\\
+$P=IV \to P=9*.1$\pause$\to 0.9=9*.1$
+\end{frame}
+
+\section{Components}
+\begin{frame}
+\frametitle{Electrical Components}
+\begin{center}
+\includegraphics[width=\textwidth]{components.png}
+\end{center}
+\end{frame}
+
+\subsection{The Resistor}
+\begin{frame}
+\frametitle{The Resistor}
+Resistors are the electrical component that provides resistance. On paper they are squiggly lines, in real life they look like.\\\pause
+\begin{center}
+\includegraphics[height=.8\textheight]{resistor.jpg}
+\end{center}
+\end{frame}
+
+\subsection{The Capacitor}
+\begin{frame}
+\frametitle{The Capacitor}
+Capacitors store energy in an electrostatic field. They are made of two conducting plates separated by an insulated material. electrons build up on one plate when charged. They pass AC fairly well, but can block DC. They are represented as two parallel lines, one may be curved. There are three types, a normal type that can be reversed, an electrolytic type that is polarized (they have a + or a - to note which way the go), and variable ones with an arrow through them.\\\pause
+\begin{center}
+\includegraphics[height=.5\textheight]{capacitor.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Warning}
+\begin{center}
+\includegraphics[height=.5\textheight]{shockhazard.png}
+\end{center}
+Capacitors can store a charge for some time. They can shock with ease, at best it will hurt, at worst it can cause burns and even stop your heart.
+\end{frame}
+
+\subsection{The Inductor}
+
+\begin{frame}
+\frametitle{The Inductor}
+Inductors pass current in DC circuits, and impedes AC. They store energy in a magnetic field, magnetic fields require energy to change. This means that \textbf{any} change in current. The unit of inductance is the Henry.\\
+They are made by winding wire in a coil. The more winds the more inductance. Sometimes iron is inserted in the middle to increase the inductance.
+\begin{center}
+\includegraphics[height=.4\textheight]{inductor.jpg}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{More Inductance}
+\begin{center}
+\includegraphics[height=.9\textheight]{inductor.png}
+\end{center}
+\end{frame}
+
+\subsection{Relay}
+\begin{frame}
+\frametitle{Relays}
+An inductor next to a magnetic switch creates a relay. They can be used to separate high current, or voltage circuits from low ones.
+\end{frame}
+
+\subsection{Diode}
+\begin{frame}
+\frametitle{Diodes}
+Diodes prevent current from moving in one direction, while doing not much to current in the other. Some of them give off light. Others known as Zener diodes will let current flow against them if the voltage is high enough.\\
+\begin{center}
+\includegraphics[angle=90,width=\textwidth]{diode.jpg}
+\end{center}
+\end{frame}
+
+\subsection{Transistors}
+\begin{frame}
+\frametitle{Transistors}
+Transistors allow a small current to control a much larger one. This gives transistors "gain". Two types we care about are Bi-polar Junction (BJT), and Field Effect (FET).
+\end{frame}
+
+\begin{frame}
+\frametitle{BJT's}
+Bipolar Junction Transistors come in two types, NPN and PNP. Both have three connections, an emitter, a collector, and a base. In diagrams the emitter is the wire with an arrow, the collector is on the same "side" as the emitter, and the base goes out the other way, if you turn it so it would stand on the two legs the base is the top. With an NPN current is allowed to flow from the collector to the emitter when there is enough voltage between the emitter and the base. in NPN's the arrow \textbf{N}ever \textbf{P}oints i\textbf{N}.\\PNP's allow current to flow from the emitter to the collector when there is enough voltage between the emitter and the base. For PNP's the arrow \textbf{P}oints i\textbf{N} \textbf{P}ermanently\\
+\begin{center}
+\includegraphics{bjts.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{MOSFET's}
+Metal Oxide Semiconductor Field Effect Transistors work much like BJT's but they are a little different. In the diagrams if the arrow points out they are P-channel, and if it points i\textbf{N} its an N-channel. The three wires are a Gate, a Drain, and a Source. The wire with the arrow is the source, the drain is on the same side as the source, and the other one is the gate. In either case if there is a large enough voltage between the source and the gate current can flow in the direction of the arrow between the source and the drain.
+\begin{center}
+\includegraphics{mosfets.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
 \end{frame}
 
 \begin{frame}
