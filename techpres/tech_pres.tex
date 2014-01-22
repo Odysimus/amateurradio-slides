@@ -1347,6 +1347,7 @@ In radio we use different methods for "encoding" information on electromagnetic 
 Yes that math is good for something/
 \end{frame}
 
+
 \subsection{Continuous Wave}
 \begin{frame}
 \frametitle{CW}
@@ -1355,34 +1356,39 @@ Continuous Wave or CW communicates information by turning a signal on and off. I
 
 \begin{frame}
 \frametitle{CW picture}
-\includegraphics[height=.9\textheight]{cw.png}
+\includegraphics[height=.5\textheight]{cw.png}
 \end{frame}
 
 \subsection{Amplitude Modulation}
 
 \begin{frame}
 \frametitle{AM}
-Amplitude Modulation or AM, works by keeping the frequency of a signal steady and varying the amplitude or intensity of the wave. For sounds, we simply add the sound wave to the radio wave.
+Amplitude Modulation or AM, works by keeping the frequency of a signal steady and varying the amplitude or intensity of the wave. For sounds, we simply add the sound wave to the radio wave. There are commercial AM stations, generally in lower frequencies bands. AM waves can be subject to many different forms of interference. Next to CW, AM makes for the simplest transmitters and receivers.
 \end{frame}
 
 \begin{frame}
 \frametitle{AM picture}
-\includegraphics[height=.9\textheight]{Amfm.png}
+\includegraphics[height=.5\textheight]{am.png}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{SSB }
+\begin{columns}
+\column{.4\textwidth}
+AM is really easy but isn't very efficient. The image to the right shows the power of an AM wave. The center spike is the Carrier, and holds no useful information. The smaller peaks on either side are mirrored across the carrier. If we remove everything but on of the sides we can more efficiently use power and bandwidth. This is called Single Side band
+\column{.6\textwidth}
+\includegraphics[width=\textwidth]{amfft.png}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{SSB Continued}
+From the graph we can see there are two different sidebands, one on either side of the carrier. The one that is higher in frequency is the "Upper" Sideband and the lower one is the "Lower" Sideband. For historical reasons we Upper Sideband (USB) on frequencies higher than 14MHz, and Lower Sideband on frequencies lower than 14MHz. There are also times when we use Vestigial Sideband, that is one and a part sidebands, namely for sending images.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{FM}
+FM or frequency modulation works by verrying the freqency of the signal to encode information. FM takes the most bandwidth in that you have clear enough room on either side of the center frequency to allow for a fully modulated signal.
 \end{frame}
 
 \begin{frame}
