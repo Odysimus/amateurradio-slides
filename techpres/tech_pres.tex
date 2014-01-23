@@ -1344,7 +1344,7 @@ Similar to capacitors batteries store electrical energy, however they store that
 \begin{frame}
 \frametitle{Modulation}
 In radio we use different methods for "encoding" information on electromagnetic waves. All methods take advantage of some of the really cool parts of waves and trig.\\
-Yes that math is good for something/
+Yes that math is good for something!
 \end{frame}
 
 
@@ -1371,6 +1371,8 @@ Amplitude Modulation or AM, works by keeping the frequency of a signal steady an
 \includegraphics[height=.5\textheight]{am.png}
 \end{frame}
 
+\subsection{Single Sideband}
+
 \begin{frame}
 \frametitle{SSB }
 \begin{columns}
@@ -1381,14 +1383,146 @@ AM is really easy but isn't very efficient. The image to the right shows the pow
 \end{columns}
 \end{frame}
 
+
 \begin{frame}
 \frametitle{SSB Continued}
-From the graph we can see there are two different sidebands, one on either side of the carrier. The one that is higher in frequency is the "Upper" Sideband and the lower one is the "Lower" Sideband. For historical reasons we Upper Sideband (USB) on frequencies higher than 14MHz, and Lower Sideband on frequencies lower than 14MHz. There are also times when we use Vestigial Sideband, that is one and a part sidebands, namely for sending images.
+From the graph we can see there are two different sidebands, one on either side of the carrier. The one that is higher in frequency is the "Upper" Sideband and the lower one is the "Lower" Sideband. For historical reasons we Upper Sideband (USB) on frequencies higher than 10MHz, and Lower Sideband on frequencies lower than 10MHz. There are also times when we use Vestigial Sideband, that is one and a part sidebands, namely for sending images.
 \end{frame}
+
+\subsection{Frequency Modulation}
 
 \begin{frame}
 \frametitle{FM}
-FM or frequency modulation works by verrying the freqency of the signal to encode information. FM takes the most bandwidth in that you have clear enough room on either side of the center frequency to allow for a fully modulated signal.
+FM or frequency modulation works by varying the frequency of the signal to encode information. FM takes the most bandwidth in that you have clear enough room on either side of the center frequency to allow for a fully modulated signal.
+\end{frame}
+
+\begin{frame}
+\frametitle{FM Picture}
+\includegraphics[height=.5\textheight]{fm.png}
+\end{frame}
+
+\subsection{Phase Modulation}
+
+\begin{frame}
+\frametitle{Phase Modulation}
+Related to FM is Phase Modulation. Instead of changing the frequency, we adjust the phase of a signal. The same cirucits that process FM can handle PM.
+\end{frame}
+
+\subsection{Extra layers}
+\begin{frame}
+\frametitle{AFSK, Packett, etc.}
+We can add layers on top of these simple modulation systems to encode information. AFSK Audio Frequency Shift Keying, is a digital mode that encodes 0's and 1's as audio tones that can be sent using one of the modulations. Packet radio is a particular protocol for sending information, generally using AFSK. APRS is a way of formatting data send via packet to report the position and other information that can show up on a map.
+\end{frame}
+
+\begin{frame}
+\frametitle{APRS}
+\includegraphics[width=.9\textwidth]{aprspdx.png}
+\end{frame}
+\section{De-Modulation}
+
+\begin{frame}
+\frametitle{De-Modulation}
+De-Modulation is the process of extracting information from a radio wave. All receivers are built from the same basic components. The antenna feeds an RF amplifier, A mixer and local-oscillator steps the frequency down to something easier to process, an intermediate frequency (IF). An IF amplifier feeds the de-modulation stage which then into an audio amplifier and out to a speaker. 
+\\
+It is important to remember that these devices are made of circuits built from the components from the previous section.
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Radio}
+\includegraphics[width=.9\textwidth]{simplereciever.png}
+\end{frame}
+
+\subsection{AM}
+\begin{frame}
+\frametitle{The detector}
+The AM demodulation device is called a Detector. Essentially it removes the carrier from the signal and leaves only the information, which for the most part is audio.
+\includegraphics[width=.9\textwidth]{simpledetector.png}
+\end{frame}
+
+\subsection{SSB}
+
+\begin{frame}
+\frametitle{SSB}
+As a SSB signal is just an AM signal without the carrier, it is simple enough to replace it and use the same Detector. An extra component called a Beat Frequency Oscillator is used to replace the carrier that is removed from when transmitting.
+\includegraphics[width=.9\textwidth]{simpleproductdetector.png}
+\end{frame}
+
+\subsection{FM}
+\begin{frame}
+\frametitle{FM}
+By far the most complex demodulation circuit is the discriminator used with FM signals. For the purpose of the test you only need to know the type of circuit, not how to build one. 
+\includegraphics[width=.9\textwidth]{simplediscriminator.png}
+\end{frame}
+
+\section{The Transceiver}
+\begin{frame}
+\frametitle{Modulation and De-modulation together}
+For the sake of space it is worth while to combine a transmitter and receiver.
+\includegraphics[height=.6\textheight]{drake4.jpg}
+\end{frame}
+
+\begin{frame}
+\frametitle{Basic}
+The simple looking idea is to just hook both a receiver and transmitter to the same antenna, like so.
+\includegraphics[height=.5\textheight]{simpletr.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Real}
+The problem with the simple setup is that the energy from the transmitter goes right into the receiver. Remember all those amplifiers in the receiver, they will amplify the very strong signal and then the magic smoke that makes everything work will get out. So \ldots
+\includegraphics[width=.8\textwidth]{simpletrworks.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{TR Switch}
+The Transmit Receive switch very quickly disconnects either the transmitter or the receiver so that the reliever doesn't blow up.
+\end{frame}
+
+\section{Repeaters}
+
+\begin{frame}
+\frametitle{Repeaters}
+A repeater is just a radio that transmits what it hears. They are generally placed on high places where they can see large areas. They use a technique called Duplex, where it simultaneously receives and transmits on different frequencies. Radios automatically switch between the "input" and "output" frequencies so you don't have to. We often refer to repeaters by their output frequency, and sometimes by their callsign.
+\end{frame}
+
+\begin{frame}
+\frametitle{Offset}
+The difference between the input, the frequency the repeater listens to, and the output, the frequency the repeater transmits on, is called the offset. The standard offset is part of the band plan. The direction of the offset is also part of the band plan.\\
+
+\begin{tabular}{|l|r|}
+\hline
+2m & 600 KHz\\ \hline
+1.25m & 1.5MHz \\ \hline
+70cm & 5MHz \\
+\hline
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Offset Examples}
+A couple of sample offsets on 2 meters are.\\
+147.16MHz uses a standard positive offset, has an input of 147.76MHz.\\
+146.78MHz again with a standard but negative offset has an input of 146.18MHz.\\
+It can be difficult to remember if one part of a band is positive or negative so we often write frequency as 147.16+ or 146.78-
+\end{frame}
+
+\begin{frame}
+\frametitle{Tones}
+Because there is a limited number of locations that are good to place repeaters lots of them end up at the same place. If we don't do anything one can easily cause another to activate. To prevent this we use special signals to make sure we only activate, these are referred to as sub-audible tones.\\
+
+There are two types, CTCSS Continuous Tone Coded Squelch System, and DCS Digital Coded Squelch.
+\end{frame}
+
+\begin{frame}
+\frametitle{Repeater Directory}
+How does one find out information like offset, and tone, and other useful information about a repeater?\\
+The ARRL publishes a book called the Repeater Directory.
+\end{frame}
+
+\begin{frame}
+\frametitle{Duplexers}
+Unlike normal radios that don't need to transmit and receive at the same time and can use a switch repeaters inherently have to do both at the same time. The solution is called a duplexer. Duplexers are very selective filters that allow only the transmit frequency between the transmitter and antenna, and only the receive frequency between the antenna and the receiver.
 \end{frame}
 
 \begin{frame}
@@ -1446,6 +1580,290 @@ FM or frequency modulation works by verrying the freqency of the signal to encod
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Title}
+
+\end{frame}
 %
 %\begin{frame}
 %\frametitle{Title}
