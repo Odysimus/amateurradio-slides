@@ -1640,56 +1640,100 @@ The Internet Repeater Linking Project or IRLP connects repeaters using the inter
 Echolink allows users to connect radios, computers, phones, tablets, etc\. to their network. The result is similar to IRLP though you don't have to have a radio to use echolink. 
 \end{frame}
 
-\part{Antennas}
+\part{Antennas and Feedline}
 
+\section{Antennas}
 \begin{frame}
-\frametitle{Title}
+\frametitle{Antennas}
+Any radio amateur will tell you that while a million watts is cool, at the end of the day its the antenna that does the real work.\\
+Antennas take radio signals in the form of electrons moving in wires and converts that signal into electromagnetic waves, and back.\\
+Improperly antenna configurations can even damage your radio! A 5 watt radio with a great antenna can get a lot more work done than 1000 watt radio with a poor antenna.
+\end{frame}
 
+\subsection{1/4 Vertical}
+\begin{frame}
+\frametitle{Quarter Wave Vertical}
+\begin{columns}
+\begin{column}{.6\textwidth}
+Probably the simplest antenna to look at is the 1/4 vertical. It is made of two parts, a vertical section of wire that is 1/4 the wavelength long, and ground.\\
+The wavelength is that of the wave in the wire, which is not the same as in free space. Fortunately the math has already been done for us, over and over and the equation is: $L\left(ft\right) = \frac{234}{F \left(MHz\right)}$
+\end{column}
+\begin{column}{.4\textwidth}
+\includegraphics[width=\textwidth]{qwavevert.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Grounding}
+\begin{columns}
+\begin{column}{.5\textwidth}
+The problem with this is that the antenna needs to be close to ground, but we want antennas to be really high up so they can "see" further.\\
+The solution is to create a "fake" ground that can elevated with the vertical section.
+\end{column}
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth]{qwavevertwground.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Vertical Radiation Patern}
+The vertical radiates well in all horizontal directions, but doesn't do very well up or down.
+\begin{center}
+\includegraphics[height=.7\textheight]{qwavevertrad.png}
+\end{center}
+\end{frame}
 
+\subsection{1/2 Wave Dipole}
+
+\begin{frame}
+\frametitle{1/2 Wave Dipole}
+Another common antenna is the 1/2 wave dipole. This is made by placing two 1/4 wave wires in lines and feeding them in the middle. This uses one of the wires as the "ground". The total length is twice that found for the 1/4 vertical.
+\begin{center}
+\includegraphics[height=.5\textheight]{hwavedipole.png}
+\end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Dipole Radiation patern}
+The dipole radiates well perpendicular to the length of the wire. A dipole running north-south will radiate east-west.
+\begin{center}
+\includegraphics[height=.5\textheight]{hwavedipolerad.png}
+\end{center}
+\end{frame}
 
+\subsection{Gain}
+\begin{frame}
+\frametitle{Gain}
+\begin{columns}
+\begin{column}{.5\textwidth}
+The yellow dot and line are the antennas. The red circle is the radiation pattern of the vertical, and the green circles are the pattern for the dipole. The distance from the center indicates the strength.\\
+Notice how the dipole is better in two directions but worse the other two. The apparent increase in signal strength when the dipole is "pointed" in the right direction is called Gain.
+\end{column}
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth]{vertvsdipole.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{dB's}
+We generally measure Gain in terms of decibels, dB. This is a ratio measurement, meaning it compares two things. We often will compare antennas to an "isotropic" antenna or a perfect 1/2 wave dipole, dBi and dBd. If an antenna claims some gain without saying what it is compared to ASK!. for POWER the equation is $dB=10\log\frac{P}{P_0}$ and for voltage its $dB=20\log\frac{V}{V_0}$ where P and V are your apparent signal and $P_0$ and $V_0$ are the starting points.\\
+A good rule to remember is that a change of 3dB in power is a change of a factor of 2 for power, and a change of 6dB is a factor of 2 for voltage. We almost always talk in terms of power.
+\end{frame}
 
+\subsection{The Yagi}
+\begin{frame}
+\frametitle{The Yagi-Uda}
+If we add another length of wire behind the dipole to reflect incoming signals into the antenna, and more in front to direct signals we get a Yagi-Uda, or Yagi.\\
+\includegraphics[height=.5\textheight]{yagi.png}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
+\frametitle{Giant Antennas}
+\includegraphics[width=.49\textwidth]{arecibo.jpg}
+\includegraphics[width=.49\textwidth]{160myagi.jpg}
 \end{frame}
 
 \begin{frame}
