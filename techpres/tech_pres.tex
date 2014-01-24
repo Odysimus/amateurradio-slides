@@ -1736,54 +1736,67 @@ If we add another length of wire behind the dipole to reflect incoming signals i
 \includegraphics[width=.49\textwidth]{160myagi.jpg}
 \end{frame}
 
+\section{Feedline}
 \begin{frame}
-\frametitle{Title}
+\frametitle{Feed Me!}
+Antennas need a connection to the radio. We call this connection "feedline". It has one job, carry the signal between the radio and antenna as efficiently as possible.
+\end{frame}
 
+\subsection{Waveguide}
+\begin{frame}
+\frametitle{Wave Guide}
+One type of feedline is the waveguide, which is really just a hollow tube in which a signal bounces off the walls as it moves from end to end. Fiber optic cables are an example of a waveguide for light. In the waveguide the signal moves as a radio wave. The size of the guide depends on the wavelength of the wave, they are almost never used below UHF as they get really really big. 
+\end{frame}
+
+\subsection{Coaxial Cable}
+\begin{frame}
+\frametitle{Coax}
+By far the most common feedline in use is Coaxial Cable. They are made of a center wire surrounded by an insulator, which is in turn surrounded by a metal shield and another outer insulator. More layers of shields and insulators can be added as needed. The term Coaxial refers to the fact that all the components share a common axis.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{More Coax}
+Coax has several advantages over other feedlines. It is generally flexible and the metal shield and outer insulator allows it to go almost anywhere, even underground. However it is important to watch out for kinks, damage to the insulation and water.\\
+Once water gets into the cable it is done for, it corrodes the metal components, and changes the properties of the cable.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Hardline}
+One type of coax is called hardline, it is not flexible. It is very low loss, can be pressurized to keep water out, and is less affected by water in the first place.\\
+However it is hard to work with, it requires special equipment, its is heavy and very expensive.\\
+\includegraphics[height=.4\textheight]{4inhardline.jpg}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Losses}
+\includegraphics[height=.9\textheight]{coaxatten.jpg}
+\end{frame}
 
+\section{Impedance}
+\begin{frame}
+\frametitle{Impedance}
+Impedance is the opposition to the flow of current in an AC circuit (e\.g\. RF). It is a combined measure of the ohmic resistance, capacitance, and inductance of a circuit. Antennas have an impedance, feedlines are designed to have a known impedance, and radios have input and output impedance.\\
+Common impedance measurements in amateur radio are 50$\Omega$ and 300$\Omega$, while TV cables are normally 75$\Omega$ 
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Impedance Matching}
+If there is a mismatch in impedance then power will reflect from the point of the mismatch. This is bad! signals from the antenna bounce back to the antenna and don't reach the radio. Even more dire strong signals from the radio don't make it to the antenna and bounce back into the radio!\\
+The most efficient systems match impedance as closely as possible.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{The SWR meter}
+A simple tool for checking impedance matches is the SWR meter, they simply show you the ratio of power going out to power coming back. A match of 1:1 is perfect, most things will work with a mismatch of up to 2:1, any higher and there is a real problem.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
+\frametitle{Check everything first}
+So a good SWR means all is good right? \pause Well not exactly\ldots \\\pause
+Lets say you have a 50W radio and a broken antenna with really lossy cable say 10.6dB.\\
+When it reaches the antenna and reflects back it is down to 4.3W and radio only sees 0.4W.\\
+$SWR=\frac{F+R}{F-R}=\frac{50.4}{49.6}=1.01:1$\\
+This is a great SWR but all the power is going into the cable. The radio will be happy but you have just made your feedline a 50W heater.
 \end{frame}
 
 \begin{frame}
