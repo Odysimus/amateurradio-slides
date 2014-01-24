@@ -1485,6 +1485,8 @@ The Transmit Receive switch very quickly disconnects either the transmitter or t
 A repeater is just a radio that transmits what it hears. They are generally placed on high places where they can see large areas. They use a technique called Duplex, where it simultaneously receives and transmits on different frequencies. Radios automatically switch between the "input" and "output" frequencies so you don't have to. We often refer to repeaters by their output frequency, and sometimes by their callsign.
 \end{frame}
 
+\subsection{Offset}
+
 \begin{frame}
 \frametitle{Offset}
 The difference between the input, the frequency the repeater listens to, and the output, the frequency the repeater transmits on, is called the offset. The standard offset is part of the band plan. The direction of the offset is also part of the band plan.\\
@@ -1507,6 +1509,8 @@ A couple of sample offsets on 2 meters are.\\
 It can be difficult to remember if one part of a band is positive or negative so we often write frequency as 147.16+ or 146.78-
 \end{frame}
 
+\subsection{Tones}
+
 \begin{frame}
 \frametitle{Tones}
 Because there is a limited number of locations that are good to place repeaters lots of them end up at the same place. If we don't do anything one can easily cause another to activate. To prevent this we use special signals to make sure we only activate, these are referred to as sub-audible tones.\\
@@ -1520,80 +1524,123 @@ How does one find out information like offset, and tone, and other useful inform
 The ARRL publishes a book called the Repeater Directory.
 \end{frame}
 
+\subsection{Duplexing}
+
 \begin{frame}
 \frametitle{Duplexers}
 Unlike normal radios that don't need to transmit and receive at the same time and can use a switch repeaters inherently have to do both at the same time. The solution is called a duplexer. Duplexers are very selective filters that allow only the transmit frequency between the transmitter and antenna, and only the receive frequency between the antenna and the receiver.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Repeater Picture}
+\begin{center}
+\includegraphics[height=.95\textheight]{repeater.jpg}
+\end{center}
+\end{frame}
 
+\section{Satellites}
+
+\begin{frame}
+\frametitle{Satellite Duplexing}
+Remember those large duplexer cans from a repeater that allow transmission and reception on the same band. Well there isn't much extra space on satellites, especially small ones for them. So how do we have satellite repeaters? Simple we separate the transmit and receive frequencies by large margins. The greater the offset the smaller the duplexer can be, when the separation is large enough the device becomes what is known as a diplexer. A diplexer uses simple low-pass and high-pass filters to separate signals from two different bands. More practically they feed different antennas.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Satellite Duplexing}
+The convention for describing which bands a satellite operates on uses one or two letters. If there is one letter then the satellite only beacons on that band, if there are two letters the satellite receives on the first letter and transmits on the second. Band letters are H for HF, V for VHF, U for UHF, L for L-band, K for K-band.  Most satellites use mode V/U, meaning they listen on VHF (2-meters) and transmit on UHF (70-cm).
+\end{frame}
 
+\subsection{Doppler Shift}
+\begin{frame}
+\frametitle{Doppler Shift}
+Satellites are moving really, really fast, on a few to tens of miles per second. At this speed as they move overhead we have to contend with the Doppler shift, the apparent change in frequency of a wave of emitted by a moving object. As the satellite aproaches the frequency increases, and as it moves away the frequency decreases. This is just like a passing car. The hard part with satellites is the shift you see, is the same shift it sees from you, meaning while you have to tune "up" to hear it when listening, you have to tune "down" so it can hear you.
+\end{frame}
+
+\subsection{Tracking}
+\begin{frame}
+\frametitle{Satellite Tracking}
+In order to keep track of where satellites are we use specially formatted numbers called orbital elements. These describe certain aspects of the where a satellite is at. Given these numbers, your location, and the time you can calculate exactly where a satellite is at.
+\begin{center}
+\includegraphics[height=.5\textheight]{orbitelements.png}
+\end{center}
+\end{frame}
+
+\section{Digital Modes}
+\begin{frame}
+\frametitle{Its a digital World}
+There are many digital modes out there, some encode digital data into digital signals.\\
+Some encode analog signals into digital signals.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Baud}
+In the digital world there are two important rates.\\
+The first is the Baud rate or number of symbols sent per second. In this case a symbol can be a particular tone, or even a change in phase or amplitude.\\
+The second is the bit rate, to calculate the bit rate you take the number of bits per symbol and multiply it by the baud rate.\\
+Often the bit rate and baud rate are the same, but not always. Some techniques such as Phase Shift Keying can support many bits per symbol.
+\end{frame}
 
+\subsection{Digital Voice}
+\begin{frame}
+\frametitle{Digital Voice}
+There are several digital modes that allow analog voice to be sent using digital signals. These are APCO Project 25 (p25), D-STAR, and AOR ARD9800. These all work similarly to cellphones and VoIP.
+\end{frame}
+
+\subsection{RTTY}
+\begin{frame}
+\frametitle{RTTY}
+RTTY - Radio TeleTYpe, is the original digital mode. It is slow 50 to 300 baud, or bits per second, that is a single text message in 4-25 seconds. It uses Frequency Shift Keying (FSK) and transmits two tones one for a "high" or 1, and a different one for a "low" or 0. RTTY machines have long been used by military and diplomatic posts, using encryption methods RTTY allows for slow, but reliable communications.
+\end{frame}
+
+\subsection{Packet}
+\begin{frame}
+\frametitle{Packet}
+Packet radio uses AFSK generally sent using FM on VHF and above, and SSB on HF. In packet the baud rate is the bit rate. On HF speeds of a whopping 300 baud, and on VHF and up speeds range from the common 1200 baud and the extreme 9600 baud. This translates into 1.2-9.6Kbps, or about 0.5-4.3 MegaBytes per hour, or one seventy-fifth the speed required to stream netflix on the lowest quality setting.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Packet modems}
+To use things like packet you need something to MODulate, and to DEModulate signals. Put them together and we get a modem. Many devices add features for controlling things like.\\
+\begin{itemize}
+\item Mailbox(es)
+\item BBS
+\item DigiPeaters
+\item Addressing
+\item Error correction
+\end{itemize}
+Together we call this a Terminal Node Controller or TNC.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Packet Networks}
+Packet networks are configured much like how the internet works, just much smaller. "Users" connect to nodes, these nodes can connect to each other. If there are enough nodes lined up, messages can move over great distances. At times it is possible for messages to move across the country and even the world entirely by bouncing from radio to radio.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{The Internet}
+There are message handling systems that combine the scale and speed of the internet and the robustness of radio. One such system is Winlink 2000 (yes people still use things like 2000 in names). Nodes in the system decide try to move messages through the internet, and if not over radio, special servers track messages to ensure they get delivered to the appropriate user.
+\end{frame}
 
+\subsection{APRS}
+\begin{frame}
+\frametitle{APRS}
+The Automatic Position Reporting System APRS (pronounced A-pers) encodes position data in standard packet formats. Other information such as weather, messages, even icons. The system has "Igates" or internet gateways that pass information to internet servers. \hyperlink{www.findu.com}{findu.com} and \hyperlink{www.aprs.fi}{aprs.fi}
+\end{frame}
+
+\section{Linked Repeaters}
+
+\begin{frame}
+\frametitle{Linked Repeaters}
+Some repeaters are linked using radios, one such system is the Peak Radio Association system. This network allows users all over the state and parts of Washington and California to speak to each other. It does take a second or two for all the links to activate.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{IRLP and EchoLink}
+The Internet Repeater Linking Project or IRLP connects repeaters using the internet, audio from one repeater are sent to others.\\
+Echolink allows users to connect radios, computers, phones, tablets, etc\. to their network. The result is similar to IRLP though you don't have to have a radio to use echolink. 
 \end{frame}
 
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
+\part{Antennas}
 
 \begin{frame}
 \frametitle{Title}
