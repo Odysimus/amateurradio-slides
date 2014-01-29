@@ -1775,7 +1775,7 @@ However it is hard to work with, it requires special equipment, its is heavy and
 \section{Impedance}
 \begin{frame}
 \frametitle{Impedance}
-Impedance is the opposition to the flow of current in an AC circuit (e\.g\. RF). It is a combined measure of the ohmic resistance, capacitance, and inductance of a circuit. Antennas have an impedance, feedlines are designed to have a known impedance, and radios have input and output impedance.\\
+Impedance is the opposition to the flow of current in an AC circuit (e.g.\ RF). It is a combined measure of the ohmic resistance, capacitance, and inductance of a circuit. Antennas have an impedance, feedlines are designed to have a known impedance, and radios have input and output impedance.\\
 Common impedance measurements in amateur radio are 50$\Omega$ and 300$\Omega$, while TV cables are normally 75$\Omega$ 
 \end{frame}
 
@@ -1784,6 +1784,8 @@ Common impedance measurements in amateur radio are 50$\Omega$ and 300$\Omega$, w
 If there is a mismatch in impedance then power will reflect from the point of the mismatch. This is bad! signals from the antenna bounce back to the antenna and don't reach the radio. Even more dire strong signals from the radio don't make it to the antenna and bounce back into the radio!\\
 The most efficient systems match impedance as closely as possible.
 \end{frame}
+
+\subsection{SWR}
 
 \begin{frame}
 \frametitle{The SWR meter}
@@ -1800,28 +1802,39 @@ This is a great SWR but all the power is going into the cable. The radio will be
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{SWR Problems}
+So how do you deal with SWR problems?\\
+\begin{enumerate}
+\item Adjust the impedance of feedline and antennas to minimize the extent of the mismatch and reduce the SWR.
+\item Use an antenna tuner that doesn't fix the mismatch, but will protect the radio from reflected power by making it look like there is a match.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Antenna Tuners}
+Antenna tuners work by changing the apparent electrical properties of a system by adding inductance or capacitance thus are able to match the impedance between two components at a single point. The two places tuners are commonly found are right at the output of the transmitter (some radios even have built in tuners), and at the base of the antenna. Tuners at the radio protect if from reflected power, tuners at antennas maximize the power that gets radiated.
+\end{frame}
+
+\begin{frame}
+\frametitle{Tuner Pictures}
+
+\end{frame}
+
+\section{Connections}
+\begin{frame}
+\frametitle{Connections}
+So now we have feedlines, radios, and antennas, how do we actually connect them? There are four common RF connectors.\pause\\
+The PL-259(SO-239) Are by far the most common and work well on HF, ok on VHF and not so good on UHF and above, they also can handle relatively large amounts of power. They are sometimes called UHF connectors even though they aren't very good for UHF. \pause \\
+The Type N connector can't handle quite as much power as the 259 (though still high enough for amateur use), but works better at higher frequencies (through SHF) and is much more weather resistant. They are also much more expensive than the 259. \pause \\
+The BNC or Bayonet Neil-Concelman work well up to about 2GHz, at lower power levels. The "Bayonet" part makes them easy to connect/disconnect \pause \\
+The SMA or Sub Miniature is to the BNC what the N is to the 259, better performance into SHF, but lower power.
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
+\frametitle{Connectors continued}
+259's and N's are common for "Base" or "Mobile" stations, namely in cases where you are not likely to disconnect and reconnect cables often. In "Hostile" weather environments it is not common to protect these connections from water.\\
+BNC's and SMA's are common on handheld radios. While the spec's say they are safe up to several thousand watts it isn't advised to run more than 50-ish on either. BNC's are also prone to tarnish and this changes the properties of the connector. They do not handle outdoors well for any length of time, though a threaded version TNC is an option.
 \end{frame}
 
 \begin{frame}
