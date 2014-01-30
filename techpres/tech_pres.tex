@@ -1817,7 +1817,20 @@ Antenna tuners work by changing the apparent electrical properties of a system b
 
 \begin{frame}
 \frametitle{Tuner Pictures}
+\begin{columns}
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth]{ah4inside.jpg}
+\end{column}
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth]{drakemn7tuner.jpg}
+\end{column}
+\end{columns}
+\end{frame}
 
+\begin{frame}
+\frametitle{Dummy Load}
+Sometimes you want to test your equipment without actually transmitting over the air. In this case you need something that has an impedance match, and will be able to safely dissipate the RF energy. Enter the Dummy load, a device made to do just that. Be sure to always check the ratings for power and duty cycle.\\
+\includegraphics[height=.5\textheight]{heathcantenna.jpg}
 \end{frame}
 
 \section{Connections}
@@ -1837,149 +1850,172 @@ The SMA or Sub Miniature is to the BNC what the N is to the 259, better performa
 BNC's and SMA's are common on handheld radios. While the spec's say they are safe up to several thousand watts it isn't advised to run more than 50-ish on either. BNC's are also prone to tarnish and this changes the properties of the connector. They do not handle outdoors well for any length of time, though a threaded version TNC is an option.
 \end{frame}
 
+\part{Power and Safety}
+\section{Shock}
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Shock!}
+Electricity is the number one cause of electrocution in the US!\\
+You may have heard that its the voltage that hurts and the current that kills. While true remember that $V=IR$ and if V goes up I probably is as well.\\
+Less than 100mA can disrupt your heart, and it can take only 30V on your skin to reach 100mA across the heart.
+Besides heart problems current creates heat that can cause serious burns.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Shock Prevention}
+Some ways to mitigate shock danger are.\\
+\begin{itemize}
+\item Turn off and disconnect equipment before working on it.
+\item Remember to discharge capacitors.
+\item Don't circumvent safety features such as power interlocks.
+\item If you can't power down something then:
+\begin{itemize}
+\item Use one hand, keep the other in your pocket
+\item Take of rings, watches, and anything else metal
+\item Remember things happen faster than you can react, one wrong move and you could be dead before you know it.
+\end{itemize}
+\end{itemize}
+\end{frame}
 
+
+\begin{frame}
+\frametitle{Fuses}
+Fuses are your friend.\\
+Fuses are designed to open a circuit when overloaded, they burn so you and your equipment don't.\\
+Always be sure to use the proper fuse, they are rated for voltage, current, and slow/fast burn
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Fuse Picture}
+\includegraphics[width=\textwidth]{fuse.jpg}
+\end{frame}
 
+\section{Grounding}
+\begin{frame}
+\frametitle{House wiring}
+The current standard code for electrical wiring in the US calls for 3-prong outlets. The three prongs are Hot, Common, and Ground. The hot supplies the current, the common provides a return route, and the ground acts as a safety. In the breaker box the common and ground are supposed to be bonded together.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{House picture}
+\includegraphics[height=.9\textheight, width=.9\textwidth]{outletground.jpg}
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{GFCI}
+In some cases a Ground Fault Circuit Interrupter may be required by code. These devices open the circuit if there is a current imbalance between the hot and common lines. They look like normally outlets with two buttons on them. These provide an extra level of protection especially in locations such as outdoors or bathrooms. Though be aware that some devices may not function properly when connected to GFCI protected circuits, namely devices with their own GFCI installed.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Radio Grounding}
+Radio equipment should be properly grounded on its own. Large, clean conductors should be used running in straight lines, and as short as reasonably possible. Electrical supply stores will sell grounding bars that allow you to run short runs from devices to a common point and ground that point.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Towers}
+\includegraphics[height=.9\textheight, width=.9\textwidth]{towerground.jpg}
+\end{frame}
 
+\section{Batteries}
+\begin{frame}
+\frametitle{Lead Acid}
+Lead acid batteries come in several different types, common in amateur use are Deep-cycle and sealed cells.\\
+Typical deep-cycle batteries are rated to discharge a much larger percentage of their capacity than say a car battery. They can be charged off your car or a charger, and are relatively cheap and easy to find. However their are filled with acid that can leak if handled improperly, and can emit explosive gasses during charging.\\
+Sealed cells are more expensive and harder to find, but are much more resistant to mishandling. However they can crack and leak if overcharged, overheated, or abused.\\
+Both contain Lead! 
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
+\frametitle{Lithium}
+Lithium batteries are becoming much more common especially in handheld radios. While most have built in circuits to prevent damage care must be taken to prevent physical abuse. Overcharge, overheat, and a physical break in the container can release lithium which reacts violently with just about everything causing fire or even explosions.
+\end{frame}
 
+\section{RF Safety}
+\begin{frame}
+\frametitle{RF Safety}
+RF energy is non-ionizing radiation, meaning it isn't capable of breaking chemical bonds. However those things that absorb it convert the RF energy into heat. RF burns can be caused without direct contact with an antenna.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Body resonaces}
+The body is resonant between 30 and 70 MHz, the head around 400MHz. The amount of absorption depends on the exact frequency, and field strength.\\
+Higher power and more directional antennas create higher field strengths.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Regs}
+The FCC regulates exposure limits on all frequencies, and amateurs are included.\\
+There are exemptions and special rules for stations that emit less that 50W PEP, Mobile and portable, and stations with power less than those listed in the table 1 of FCC OET Bulletin #65.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{RF limites}
+\begin{columns}
+\begin{column}{.5\textwidth}
+MF
+\begin{itemize}
+\item 160m 500W
+\end{itemize}
+HF
+\begin{itemize}
+\item 80m 500W
+\item 75m 500W
+\item 40m 500W
+\item 30m 425W
+\item 20m 225W
+\item 17m 125W
+\item 15m 100W
+\item 12m 75W
+\item 10m 50W
+\end{itemize}
+\end{column}
+\begin{column}{.5\textwidth}
+VHF All bands 50W\\
+UHF
+\begin{itemize}
+\item 70cm 70W
+\item 33cm 150W
+\item 23cm 200W
+\item 13cm 250W
+\end{itemize}
+SHF all bands 250W\\
+EHF all bands 250W\\
+Repeaters 500W
+\end{column}
+\end{columns}
+Table 1. Power thresholds for routine evaluation of amateur radio stations, watts from FCC OET #65.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Measurements}
+There are two areas with limits, the Controlled area in which everyone inside the area knows about the radiator and can control the radiator.\\
+Uncontrolled areas are those areas where people are unaware or otherwise unable to mitigate their exposure.\\
+There are three methods approved.
+\begin{itemize}
+\item Use field strenght equipment to measure the exposure.
+\item Use antenna modeling software to predict field strengths.
+\item Use the tables in OET Bulletin #65
+\end{itemize}
+The last one is the easiest and most often used.
 \end{frame}
 
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{RF mitigation}
+There are several ways to mitigate exposure to RF radiation: Move the antenna, decrease antenna gain, lower power output, and change the orientation of the antenna.
 \end{frame}
 
+\section{Towers}
 \begin{frame}
-\frametitle{Title}
-
+\frametitle{Tower Safety}
+Whenever you do anything with a tower LOOK UP! Every year people are killed by not looking for power lines.\\
+Always use safety gear! Falling from a tower is bad, getting hit by something/someone falling from a tower is also bad.\\
+Always plan ahead, place towers such that if they fall they and everything on them will miss power lines. 10ft is the rule.\\
+Use special equipment to help
 \end{frame}
 
+\part{Le Fine}
 \begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Title}
-
+\frametitle{That's it}
+Questions?
 \end{frame}
 %
 %\begin{frame}
