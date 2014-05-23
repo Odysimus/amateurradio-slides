@@ -13,6 +13,9 @@
 # *.ps
 # *.eps
 # *.pdf
+*presentation.pdf
+*questions.pdf
+*test*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
