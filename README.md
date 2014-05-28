@@ -7,18 +7,18 @@ This project is written in Tex using Beamer. The output files will be hosted som
 ##Todo##
 As the question pools for each exam are revised every 4 years upkeep will be important.
 - [] Technician exam 2014-2018 pool
-	-[x] Technician presentation
-	-[] Practice Exams
-	-[] Presentation notes
--[] General exam 2011-2015 pool
-	-[] General presentation
-	-[] Practice Exams
-	-[] Presentation notes
--[]Extra exam 2012-2016 pool
-	-[] Extra presentation
-	-[] Practice Exams
-	-[] Presentation notes
--[]Select an appropriate license
+	- [x] Technician presentation
+	- [] Practice Exams
+	- [] Presentation notes
+- [] General exam 2011-2015 pool
+	- [] General presentation
+	- [] Practice Exams
+	- [] Presentation notes
+- [] Extra exam 2012-2016 pool
+	- [] Extra presentation
+	- [] Practice Exams
+	- [] Presentation notes
+- [] Select an appropriate license
 
 ##License##
 While no license has been selected yet, the intent is for something similar to the Creative Commons Attribution 4.0.
