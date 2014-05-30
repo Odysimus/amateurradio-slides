@@ -7,6 +7,10 @@
 *.out
 *.toc
 
+##Temperary files
+*(busy)
+*.synctex*
+
 ## Intermediate documents:
 *.dvi
 # these rules might exclude image files for figures etc.
@@ -16,6 +20,7 @@
 *presentation.pdf
 *questions.pdf
 *test*.pdf
+*notes*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
