@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[10pt, handout]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -6,15 +6,18 @@
 \usepackage{graphicx}
 \usepackage{alltt}
 \usepackage{pdfpages}
+\usepackage{multicol}
 \graphicspath{{../sharedfiles/}}
 \author{Anthony Odenthal, KE7OSN Amateur Extra}
 \title{Technician Class Amateur Radio}
 \AtBeginSection[]
 {
-\begin{frame}
-\frametitle{Table of Contents}
-\tableofcontents[currentsection]
-\end{frame}
+	\begin{frame}<*>
+		\begin{multicols}{2}
+		%\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+		\end{multicols}
+	\end{frame}
 }
 
 %\setcounter{tocdepth}{2}
@@ -31,7 +34,9 @@
 %\tableofcontents
 %\end{frame}
 
+
 \part{Introduction}
+
 
 \begin{frame}
 \frametitle{Welcome}
@@ -75,8 +80,12 @@ Some things you may want to look into as useful for studying
 Remember if I go too fast or you have questions, let me know.
 \end{frame}
 
+
 \part{FCC rules, descriptions and definitions for the amateur radio service, operator and station license responsibilities}
+
 \section{Who's In Charge}
+\subsection{ITU}
+
 \begin{frame}
 \frametitle{Who's In charge}
 International Telecommunications Union (ITU)
@@ -89,6 +98,8 @@ International Telecommunications Union (ITU)
 \end{itemize}
 \end{frame}
 
+\subsection{FCC}
+
 \begin{frame}
 \frametitle{Who's In Charge}
 Federal Communications Commission (FCC)
@@ -99,6 +110,8 @@ Federal Communications Commission (FCC)
 \item Rules for amateur radio are in Part 97 of Chapter 47 (47 CFR 97)
 \end{itemize}
 \end{frame}
+
+\subsection{Frequency Coordinator}
 
 \begin{frame}
 \frametitle{Who's In Charge}
@@ -132,6 +145,8 @@ The rules and regulations in this part are designed to provide an amateur radio 
 \item Continuation and extension of the amateur's unique ability to enhance international goodwill.
 \end{enumerate}
 \end{frame}
+
+\subsection{Voluntary Noncommercial}
 
 \begin{frame}
 \frametitle{Key phrase}
@@ -240,6 +255,8 @@ Special situations have special rules\\
 The ULS is an online database of FCC license information. A new licensee may use their privileges as soon as their information appears in the ULS. When you upgrade you may use your new privileges as soon as you pass the test.
 \end{frame}
 
+\subsection{How to ID}
+
 \begin{frame}
 \frametitle{Typical uses of a callsign}
 \begin{itemize}[<+->]
@@ -282,6 +299,8 @@ KE7OSN clear
 \end{center}
 \end{frame}
 
+\subsection{ITU Bands}
+
 \begin{frame}
 \frametitle{ITU Band Names}
 \begin{itemize}
@@ -294,6 +313,8 @@ KE7OSN clear
 \item THF - Tremendously High Frequency - 300GHZ to 3THz
 \end{itemize}
 \end{frame}
+
+\subsection{Amateur Bands}
 
 \begin{frame}
 \frametitle{HF 3-30MHz}
@@ -383,9 +404,11 @@ We are PRIMARY users. We have first ``rights''. Secondary users must not cause u
 \end{itemize}
 \end{frame}
 
+
 \part{Station operation; choosing an operating frequency, calling another station, test transmissions, use of minimum power, frequency use, band plans}
 
 \section{Emergency Operations}
+
 \begin{frame}
 \frametitle{97.403 Safety of life and protection of property}
 No provision of these rules prevents the use by an amateur station of any means of radio communication at its disposal to provide essential communication needs in connection with the immediate safety of human life and immediate protection of property \textbf<2->{when normal communication systems are not available.}
@@ -416,6 +439,8 @@ RACES – \textbf{R}adio \textbf{A}mateur \textbf{C}ivil \textbf{E}mergency \tex
 \end{frame}
 
 \section{Nets and messages}
+\subsection{Nets}
+
 \begin{frame}
 \frametitle{Disaster == Organized Chaos}
 To keep some organization of the use of frequencies and communications,  groups are organized into “nets”.
@@ -431,6 +456,8 @@ There are two kinds of nets:
 \item[Free] - the net control allows stations to contact each other as they need to.   
 \end{description}
 \end{frame}
+
+\subsection{Messages}
 
 \begin{frame}
 \frametitle{Disaster == Organized Chaos}
@@ -462,6 +489,7 @@ These messages use the NTS RadioGram form. The process is described in depth in 
 \end{frame}
 
 \section{Radio Speak}
+
 \begin{frame}
 \frametitle{Types of radio short-hand}
 Amateur radio has its own codes, and slang. Much like 1337 or txt, this ``shared language'' makes it easier to communicate quickly, and efficiently. Much of it comes from the days of telegraph and Morse Code.
@@ -539,8 +567,10 @@ There are two other special cases.
 In most amateur bands the maximum legal limit for power output is 1500 Watts, PEP. PEP - Peak Envelope Power is the largest amplitude of a signal. On some bands the limit is lower, for each band there is also a point at which you have to do a safety evaluation of your station to avoid unsafe exposure. You should always use the minimal power required to do what you need to do.
 \end{frame}
 
+
 \part{Radio wave characteristics, radio and electromagnetic properties, propagation modes}
 \section{Electromagnetic Waves}
+
 \begin{frame}
 \frametitle{Electromagnetic Waves}
 Electromagnetic waves are energy waves that move through space, similar to the way waves move in water or sound through air.\\
@@ -617,6 +647,7 @@ $\frac{300}{223.50}=?$ \only<6->{1.35, for the 1.25meter band.}
 \end{frame}
 
 \section{Propagation}
+
 \begin{frame}
 \frametitle{Line of sight}
 Just like light radio waves travel in a straight line.\\
@@ -625,6 +656,8 @@ Just like light radio waves travel in a straight line.\\
 \only<4->{Reflections can be really useful when you don't have a direct line of sight.\\}
 \only<5->{Radio waves will also refract.\\}
 \end{frame}
+
+\subsection{Atmospheric Propagation}
 
 \begin{frame}
 \frametitle{Solar Wind}
@@ -679,6 +712,8 @@ Air can refract electromagnetic radiation. A temperature inversion (warm air abo
 This is called ``Tropospheric Ducting'' and often happens between here and Hawaii, it mostly affects VHF.
 \end{frame}
 
+\subsection{Special Cases}
+
 \begin{frame}
 \frametitle{Knife Edge}
 \begin{center}
@@ -686,36 +721,49 @@ This is called ``Tropospheric Ducting'' and often happens between here and Hawai
 \end{center}
 \end{frame}
 
+\subsection{Polarization}
+
 \begin{frame}
 \frametitle{Polarization}
 Antennas tend to radiate and receive waves polarized along the direction of the antenna. An antenna pointing vertically produces vertically polarized waves, and the equivalent is true for a horizontal antenna.\\
 If the polarization of the receiving antenna does not match the wave it is receiving then the signal strength is reduced by a significant degree. In an ideal world without the magnetic portion of a wave two antennas rotated $\pm90^{\circ}$ would not be able to ``see'' each other.
 \end{frame}
 
+
 \part{Amateur radio practices and station set up}
+
+
 \begin{frame}
 \frametitle{Technician class section 4}
 This section is going to be really short as much of the details fit in better elsewhere
 \end{frame}
+
 \section{Station setup; microphone, speaker, headphones, filters, power source, connecting a computer, RF grounding}
+
 \begin{frame}
 \frametitle{Station setup; microphone, speaker, headphones, filters, power source, connecting a computer, RF grounding}
 Some microphones include push-to-talk and voltage connections. Headphones can be useful in a noisy area instead of a speaker. A regulated power supply reduces voltage fluctuations. Filters between the transmitter and antenna can reduce harmonic emissions. A band-reject filter is a good first step if your 2 meter radio is causing problems with a TV. A terminal node controller is a modem for your radio, your sound card can be a modem too. Flat straps are good grounding cables. Ferrite chokes can reduce RF current in cables. If your radio whines in your car and it goes along with the engine its probably the alternator. A radio installed in a car should be connected to a good ``ground''
 \end{frame}
 
 \section{Operating controls; tuning, use of filters, squelch, AGC, repeater offset, memory channels}
+
 \begin{frame}
 \frametitle{Operating controls; tuning, use of filters, squelch, AGC, repeater offset, memory channels}
 If your mic is turned up to loud your signal may distort. You can set the frequency of a radio with the keypad or VFO knob. Squelch lets you mute the receiver when no signal is coming in. You can program favorite frequencies in memory. The noise blanker option can reduce noise. The RIT or Receiver Incremental Tuning control can change the pitch of the received audio. A good filter setting for SSB is 2400Hz, and 500Hz for CW. A repeater offset is the difference in its receive and transmit frequencies.
 \end{frame}
 
+
 \part{Electrical principles, math for electronics, electronic principles, Ohm's Law}
+
 \section{Ohm's Law}
+
 \begin{frame}
 \frametitle{Ohm, Ohm on the range}
 Most metals are good at conducting electricity, this means they allow electrons to move around. We make wires that allow us to move electrons from one specific place to another.
 \end{frame}
+
 \subsection{Current}
+
 \begin{frame}
 \frametitle{Current}
 The movement of electrons is called \textbf{Current}. We measure current in the Ampere, aka the Amp, aka A (or I).\\
@@ -726,12 +774,13 @@ A device that measures current is an ammeter.
 \begin{frame}
 \frametitle{Ideas of current}
 \begin{center}
-\includegraphics[height=.9\textheight]{acdc.jpg}<1>
+%\includegraphics[height=.9\textheight]{acdc.jpg}<1>
 \includegraphics[width=\textwidth]{acdc.png}<2>
 \end{center}
 \end{frame}
 
 \subsection{Voltage}
+
 \begin{frame}
 \frametitle{The Electromotive Force}
 The force that causes electrons to flow is called \only{\ldots}<1>\pause \textbf{The Electromotive Force}.\\
@@ -758,6 +807,7 @@ The unit of resistance is the Ohm, or $\Omega$. \pause If that looks Greek, that
 \end{frame}
 
 \subsection{Ohms Law}
+
 \begin{frame}
 \frametitle{Ohms Law}
 The voltage across a resistor is equal to the resistance times the current. $V=IR$.\\
@@ -773,6 +823,7 @@ $P=IV \to P=9*.1$\pause$\to 0.9=9*.1$
 \end{frame}
 
 \section{Components}
+
 \begin{frame}
 \frametitle{Electrical Components}
 \begin{center}
@@ -781,6 +832,7 @@ $P=IV \to P=9*.1$\pause$\to 0.9=9*.1$
 \end{frame}
 
 \subsection{The Resistor}
+
 \begin{frame}
 \frametitle{The Resistor}
 Resistors are the electrical component that provides resistance. On paper they are squiggly lines, in real life they look like.\\\pause
@@ -790,6 +842,7 @@ Resistors are the electrical component that provides resistance. On paper they a
 \end{frame}
 
 \subsection{The Capacitor}
+
 \begin{frame}
 \frametitle{The Capacitor}
 Capacitors store energy in an electrostatic field. They are made of two conducting plates separated by an insulated material. Electrons build up on one plate when charged. They pass AC fairly well, but can block DC. They are represented as two parallel lines, one may be curved. There are three types, a normal type that can be reversed, an electrolytic type that is polarized (they have a + or a - to note which way the go), and variable ones with an arrow through them.\\\pause
@@ -826,12 +879,14 @@ They are made by winding wire in a coil. The more winds the more inductance. Som
 \end{frame}
 
 \subsection{Relay}
+
 \begin{frame}
 \frametitle{Relays}
 An inductor next to a magnetic switch creates a relay. They can be used to separate high current, or voltage circuits from low ones.
 \end{frame}
 
 \subsection{Diode}
+
 \begin{frame}
 \frametitle{Diodes}
 Diodes prevent current from moving in one direction, while doing not much to current in the other. Some of them give off light. Others known as Zener diodes will let current flow against them if the voltage is high enough.\\
@@ -841,6 +896,7 @@ Diodes prevent current from moving in one direction, while doing not much to cur
 \end{frame}
 
 \subsection{Transistors}
+
 \begin{frame}
 \frametitle{Transistors}
 Transistors allow a small current to control a much larger one. This gives transistors ``gain''. Two types we care about are Bi-polar Junction (BJT), and Field Effect (FET).
@@ -863,13 +919,17 @@ Metal Oxide Semiconductor Field Effect Transistors work much like BJT's but they
 \end{frame}
 
 \subsection{Batteries}
+
 \begin{frame}
 \frametitle{Batteries}
 Similar to capacitors batteries store electrical energy, however they store that energy via chemical reaction instead of an electric field. There are many different types of batteries. They fall into two categories; Primary, that can produce current as soon as they are made, and Secondary, that have to be charged first. There are also Dry cells and Wet cells. Common batteries are Alkaline, Li-Ion, NiCad, NiMH,ZiC, Lead-Acid. Each type has different properties, advantages and disadvantages.
 \end{frame}
 
+
 \part{How Radio Works}
+
 \section{Modulations}
+
 \begin{frame}
 \frametitle{Modulation}
 In radio we use different methods for ``encoding'' information on electromagnetic waves. All methods take advantage of some of the really cool parts of waves and trig.\\
@@ -877,6 +937,7 @@ Yes that math is good for something!
 \end{frame}
 
 \subsection{Continuous Wave}
+
 \begin{frame}
 \frametitle{CW}
 Continuous Wave or CW communicates information by turning a signal on and off. If two parties agree on what different pasterns of On's and Off's mean then they can share information. The most common system is International Morse Code. 
@@ -936,6 +997,7 @@ Related to FM is Phase Modulation. Instead of changing the frequency, we adjust 
 \end{frame}
 
 \subsection{Extra layers}
+
 \begin{frame}
 \frametitle{AFSK, Packet, etc.}
 We can add layers on top of these simple modulation systems to encode information. AFSK Audio Frequency Shift Keying, is a digital mode that encodes 0's and 1's as audio tones that can be sent using one of the modulations. Packet radio is a particular protocol for sending information, generally using AFSK. APRS is a way of formatting data send via packet to report the position and other information that can show up on a map.
@@ -960,6 +1022,7 @@ It is important to remember that these devices are made of circuits built from t
 \end{frame}
 
 \subsection{AM}
+
 \begin{frame}
 \frametitle{The detector}
 The AM demodulation device is called a Detector. Essentially it removes the carrier from the signal and leaves only the information, which for the most part is audio.
@@ -975,6 +1038,7 @@ As a SSB signal is just an AM signal without the carrier, it is simple enough to
 \end{frame}
 
 \subsection{FM}
+
 \begin{frame}
 \frametitle{FM}
 By far the most complex demodulation circuit is the discriminator used with FM signals. For the purpose of the test you only need to know the type of circuit, not how to build one. 
@@ -982,6 +1046,7 @@ By far the most complex demodulation circuit is the discriminator used with FM s
 \end{frame}
 
 \section{The Transceiver}
+
 \begin{frame}
 \frametitle{Modulation and De-modulation together}
 For the sake of space it is worth while to combine a transmitter and receiver.
@@ -1017,7 +1082,6 @@ A repeater is just a radio that transmits what it hears. They are generally plac
 \begin{frame}
 \frametitle{Offset}
 The difference between the input, the frequency the repeater listens to, and the output, the frequency the repeater transmits on, is called the offset. The standard offset is part of the band plan. The direction of the offset is also part of the band plan.\\
-
 \begin{tabular}{|l|r|}
 \hline
 2m & 600 KHz\\ \hline
@@ -1025,7 +1089,6 @@ The difference between the input, the frequency the repeater listens to, and the
 70cm & 5MHz \\
 \hline
 \end{tabular}
-
 \end{frame}
 
 \begin{frame}
@@ -1078,12 +1141,14 @@ The convention for describing which bands a satellite operates on uses one or tw
 \end{frame}
 
 \subsection{Doppler Shift}
+
 \begin{frame}
 \frametitle{Doppler Shift}
 Satellites are moving really, really fast, on the order of miles per second. At this speed as they move overhead we have to contend with the Doppler shift, the apparent change in frequency of a wave of emitted by a moving object. As the satellite approaches the frequency increases, and as it moves away the frequency decreases. This is just like a passing car. The hard part with satellites is the shift you see, is the same shift it sees from you, meaning while you have to tune ``up'' to hear it when listening, you have to tune ``down'' so it can hear you.
 \end{frame}
 
 \subsection{Tracking}
+
 \begin{frame}
 \frametitle{Satellite Tracking}
 In order to keep track of where satellites are, we use specially formatted numbers called orbital elements. These describe certain aspects of the where a satellite is at. Given these numbers, your location, and the time you can calculate exactly where a satellite is at.
@@ -1093,6 +1158,7 @@ In order to keep track of where satellites are, we use specially formatted numbe
 \end{frame}
 
 \section{Digital Modes}
+
 \begin{frame}
 \frametitle{Its a digital World}
 There are many digital modes out there, some encode digital data into digital signals.\\
@@ -1108,18 +1174,21 @@ Often the bit rate and baud rate are the same, but not always. Some techniques s
 \end{frame}
 
 \subsection{Digital Voice}
+
 \begin{frame}
 \frametitle{Digital Voice}
 There are several digital modes that allow analog voice to be sent using digital signals. These are APCO Project 25 (p25), D-STAR, and AOR ARD9800. These all work similarly to cellphones and VoIP.
 \end{frame}
 
 \subsection{RTTY}
+
 \begin{frame}
 \frametitle{RTTY}
 RTTY - Radio TeleTYpe, is the original digital mode. It is slow 50 to 300 baud, or bits per second, that is a single text message in 4-25 seconds. It uses Frequency Shift Keying (FSK) and transmits two tones one for a ``high'' or 1, and a different one for a ``low'' or 0. RTTY machines have long been used by military and diplomatic posts, using encryption methods RTTY allows for slow, but reliable communications.
 \end{frame}
 
 \subsection{Packet}
+
 \begin{frame}
 \frametitle{Packet}
 Packet radio uses AFSK generally sent using FM on VHF and above, and SSB on HF. In packet the baud rate is the bit rate. On HF speeds of a whopping 300 baud, and on VHF and up speeds range from the common 1200 baud and the extreme 9600 baud. This translates into 1.2-9.6Kbps, or about 0.5-4.3 MegaBytes per hour, or one seventy-fifth the speed required to stream netflix on the lowest quality setting.
@@ -1149,6 +1218,7 @@ There are message handling systems that combine the scale and speed of the inter
 \end{frame}
 
 \subsection{APRS}
+
 \begin{frame}
 \frametitle{APRS}
 The Automatic Position Reporting System APRS (pronounced A-pers) encodes position data in standard packet formats. Other information such as weather, messages, even icons. The system has ``Igates'' or internet gateways that pass information to internet servers. \hyperlink{www.findu.com}{findu.com} and \hyperlink{www.aprs.fi}{aprs.fi}
@@ -1167,9 +1237,11 @@ The Internet Repeater Linking Project or IRLP connects repeaters using the inter
 Echolink allows users to connect radios, computers, phones, tablets, etc\. to their network. The result is similar to IRLP though you don't have to have a radio to use echolink. Popular echolink nodes can attract radio operators from all over the world.
 \end{frame}
 
+
 \part{Antennas and Feedline}
 
 \section{Antennas}
+
 \begin{frame}
 \frametitle{Antennas}
 Any radio amateur will tell you that while a million watts is cool, at the end of the day its the antenna that does the real work.\\
@@ -1178,6 +1250,7 @@ Improperly antenna configurations can even damage your radio! A 5 watt radio wit
 \end{frame}
 
 \subsection{1/4 Vertical}
+
 \begin{frame}
 \frametitle{Quarter Wave Vertical}
 \begin{columns}
@@ -1231,6 +1304,7 @@ The dipole radiates well perpendicular to the length of the wire. A dipole runni
 \end{frame}
 
 \subsection{Gain}
+
 \begin{frame}
 \frametitle{Gain}
 \begin{columns}
@@ -1251,6 +1325,7 @@ A good rule to remember is that a change of 3dB in power is a change of a factor
 \end{frame}
 
 \subsection{The Yagi}
+
 \begin{frame}
 \frametitle{The Yagi-Uda}
 If we add another length of wire behind the dipole to reflect incoming signals into the antenna, and more in front to direct signals we get a Yagi-Uda, or Yagi.\\
@@ -1264,18 +1339,21 @@ If we add another length of wire behind the dipole to reflect incoming signals i
 \end{frame}
 
 \section{Feedline}
+
 \begin{frame}
 \frametitle{Feed Me!}
 Antennas need a connection to the radio. We call this connection ``feedline''. It has one job, carry the signal between the radio and antenna as efficiently as possible.
 \end{frame}
 
 \subsection{Waveguide}
+
 \begin{frame}
 \frametitle{Wave Guide}
 One type of feedline is the waveguide, which is really just a hollow tube in which a signal bounces off the walls as it moves from end to end. Fiber optic cables are an example of a waveguide for light. In the waveguide the signal moves as a radio wave. The size of the guide depends on the wavelength of the wave, they are almost never used below UHF as they get really really big. 
 \end{frame}
 
 \subsection{Coaxial Cable}
+
 \begin{frame}
 \frametitle{Coax}
 By far the most common feedline in use is Coaxial Cable. They are made of a center wire surrounded by an insulator, which is in turn surrounded by a metal shield and another outer insulator. More layers of shields and insulators can be added as needed. The term Coaxial refers to the fact that all the components share a common axis.
@@ -1300,6 +1378,7 @@ However it is hard to work with, it requires special equipment, its is heavy and
 \end{frame}
 
 \section{Impedance}
+
 \begin{frame}
 \frametitle{Impedance}
 Impedance is the opposition to the flow of current in an AC circuit (e.g.\ RF). It is a combined measure of the ohmic resistance, capacitance, and inductance of a circuit. Antennas have an impedance, feedlines are designed to have a known impedance, and radios have input and output impedance.\\
@@ -1361,6 +1440,7 @@ Sometimes you want to test your equipment without actually transmitting over the
 \end{frame}
 
 \section{Connections}
+
 \begin{frame}
 \frametitle{Connections}
 So now we have feedlines, radios, and antennas, how do we actually connect them? There are four common RF connectors.\pause\\
@@ -1377,8 +1457,11 @@ The SMA or Sub Miniature is to the BNC what the N is to the 259, better performa
 BNC's and SMA's are common on hand-held radios. While the spec's say they are safe up to several thousand watts it isn't advised to run more than 50-ish on either. BNC's are also prone to tarnish and this changes the properties of the connector. They do not handle outdoors well for any length of time, though a threaded version TNC is an option.
 \end{frame}
 
+
 \part{Power and Safety}
+
 \section{Shock}
+
 \begin{frame}
 \frametitle{Shock!}
 Electricity is the number one cause of electrocution in the US!\\
@@ -1417,6 +1500,7 @@ Always be sure to use the proper fuse, they are rated for voltage, current, and 
 \end{frame}
 
 \section{Grounding}
+
 \begin{frame}
 \frametitle{House wiring}
 The current standard code for electrical wiring in the US calls for 3-prong outlets. The three prongs are Hot, Common, and Ground. The hot supplies the current, the common provides a return route, and the ground acts as a safety. In the breaker box the common and ground are supposed to be bonded together.
@@ -1443,6 +1527,7 @@ Radio equipment should be properly grounded on its own. Large, clean conductors 
 \end{frame}
 
 \section{Batteries}
+
 \begin{frame}
 \frametitle{Lead Acid}
 Lead acid batteries come in several different types, common in amateur use are Deep-cycle and sealed cells.\\
@@ -1457,6 +1542,7 @@ Lithium batteries are becoming much more common especially in hand-held radios. 
 \end{frame}
 
 \section{RF Safety}
+
 \begin{frame}
 \frametitle{RF Safety}
 RF energy is non-ionizing radiation, meaning it isn't capable of breaking chemical bonds. However those things that absorb it convert the RF energy into heat. RF burns can be caused without direct contact with an antenna.
@@ -1541,6 +1627,7 @@ There are several ways to mitigate exposure to RF radiation: Move the antenna, d
 \end{frame}
 
 \section{Towers}
+
 \begin{frame}
 \frametitle{Tower Safety}
 Whenever you do anything with a tower LOOK UP! Every year people are killed by not looking for power lines.\\
@@ -1571,7 +1658,9 @@ So your neighbor's TV flips out when you key up, not your problem right? Technic
 Not everyone is going to be an expert operator their first day on the air. Many of us made (and still make) mistakes, and had people who helped us out. Nicely remind operators when to ID, or if the key up on top of you. Conversely remember that when a more experienced operator that them telling you to do something it is to help you out.
 \end{frame}
 
+
 \part{Le Fine}
+
 
 \begin{frame}
 \frametitle{That's it}
