@@ -17,7 +17,7 @@
 # *.ps
 # *.eps
 # *.pdf
-*presentation.pdf
+*presentation*.pdf
 *questions.pdf
 *test*.pdf
 *notes*.pdf
@@ -85,3 +85,7 @@
 
 # xindy
 *.xdy
+
+
+# Cleanup tool
+cleanup.sh
