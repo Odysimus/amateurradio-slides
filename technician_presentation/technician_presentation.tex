@@ -1,4 +1,4 @@
-\documentclass[10pt, handout]{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -8,8 +8,9 @@
 \usepackage{pdfpages}
 \usepackage{multicol}
 \graphicspath{{../sharedfiles/}}
-\author{Anthony Odenthal, KE7OSN Amateur Extra}
+\author{Anthony Odenthal, KE7OSN Amateur Extra }
 \title{Technician Class Amateur Radio}
+\subtitle{Original Presentation ``Amateur Radio in a Weekend'' \\  by Dr. John Stanley N8GFO}
 \AtBeginSection[]
 {
 	\begin{frame}<*>
@@ -52,6 +53,11 @@ The goals are:
 \frametitle{What is Amateur Radio?}
 Amateur radio are people and activities that are regulated and encouraged, in the US and abroad, that allow licensed individuals to play around with radio waves, electronics, software, techniques, practices, and equipment to do all sorts of really cool stuff. Radio Amateurs are some of the least restricted users of radio spectrum, and with that freedom they have proven time and time again their worth.
 The term Amateur refers to someone who does something as a pastime rather than a profession.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ham not HAM}
+You will often hear of amateur radio referred to as ham radio. Ham is not an acronym or initialism so only capitalize as you would any other normal noun. The term comes from the early days when some felt amateurs were ``ham-fisted'' and not as good as professional radio operators. Think of the term ``ham actor''. Well joke's on them because we liked it so much we embraced it, and ``ham'' is much faster to say than ``Amateur Radio Operator''.
 \end{frame}
 
 \begin{frame}
@@ -385,7 +391,7 @@ KE7OSN clear
 \begin{frame}
 \frametitle{2.4GHz}
 We share the 2390-2450MHz band with: 802.11 networks, cordless phones, video cameras, zigbee, etc.\ \\
-We are PRIMARY users. We have first ``rights''. Secondary users must not cause us interference and must accept interference from our operations.
+We have a higher priority than these unlicensed users. Unlicensed  users must not cause us interference and must accept interference from our operations.
 \end{frame}
 
 \begin{frame}
@@ -478,7 +484,7 @@ ARES and RACES have adopted the NIMS/ICS system for written traffic. I.e., ICS-2
 
 \begin{frame}
 \frametitle{Written Messages – Formal Traffic}
-The National Traffic System (NTS) is a system organized by ARRL to transmit messages in a standard format, usually concerning “Health and Welfare”. For example: “Aunt Martha arrived home safely. Have a happy birthday.”  Or “welcome to Ham radio”. \\
+The National Traffic System (NTS) is a system organized by ARRL to transmit messages in a standard format, usually concerning “Health and Welfare”. For example: “Aunt Martha arrived home safely. Have a happy birthday.”  Or “Welcome to ham radio”. \\
 
 These messages use the NTS RadioGram form. The process is described in depth in the Message Processing Guidelines (MPG).
 \end{frame}
@@ -486,6 +492,11 @@ These messages use the NTS RadioGram form. The process is described in depth in 
 \begin{frame}
 \frametitle{NTS RadioGram Form}
 \centering \includegraphics[width=\textwidth]{radiogramform.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{NTS vs ICS 213}
+The NTS form is often too short for important messages. The ICS 213 is designed for use in offices with forms in triplicate, and doesn't have the checks that NTS has. Largely the ICS 213 is preferred by emergency communication groups as they are what their served agencies use. Most ICS 213 messages are sent using a digital system. Sending pages of documents over the air by voice or CW is tedious and prone to errors.
 \end{frame}
 
 \section{Radio Speak}
@@ -507,7 +518,7 @@ Q codes are three letter codes that begin with Q and not QU and can be sent as e
 \begin{description}
 \item[QSY] Change frequency
 \item[QRT] Stop transmitting
-\item[QRZ] I'm calling
+\item[QRZ] I'm calling/Who's Calling?
 \item[QR\textbf<2->{M}] \textbf<2->{M}an made interference
 \item[QR\textbf<2->{N}] \textbf<2->{N}atural interference or \textbf<2->{N}oise
 \item[QSL] Acknowledge
@@ -1000,7 +1011,7 @@ Related to FM is Phase Modulation. Instead of changing the frequency, we adjust 
 
 \begin{frame}
 \frametitle{AFSK, Packet, etc.}
-We can add layers on top of these simple modulation systems to encode information. AFSK Audio Frequency Shift Keying, is a digital mode that encodes 0's and 1's as audio tones that can be sent using one of the modulations. Packet radio is a particular protocol for sending information, generally using AFSK. APRS is a way of formatting data send via packet to report the position and other information that can show up on a map.
+We can add layers on top of these simple modulation systems to encode information. AFSK Audio Frequency Shift Keying, is a digital mode that encodes 0's and 1's as audio tones that can be sent using one of the modulations. Packet radio is a particular protocol for sending information, generally using AFSK. APRS is a way of formatting data to send via packet to report the position and other information that can show up on a map.
 \end{frame}
 
 \begin{frame}
@@ -1222,7 +1233,7 @@ There are message handling systems that combine the scale and speed of the inter
 
 \begin{frame}
 \frametitle{APRS}
-The Automatic Position Reporting System APRS (pronounced A-pers) encodes position data in standard packet formats. Other information such as weather, messages, even icons. The system has ``Igates'' or internet gateways that pass information to internet servers. \hyperlink{www.findu.com}{findu.com} and \hyperlink{www.aprs.fi}{aprs.fi}
+The Automatic Packet Reporting System APRS (pronounced A-pers) encodes position data in standard packet formats. Other information such as weather, messages, even icons. The system has ``Igates'' or internet gateways that pass information to internet servers. \hyperlink{www.findu.com}{findu.com} and \hyperlink{www.aprs.fi}{aprs.fi}
 \end{frame}
 
 \section{Linked Repeaters}
@@ -1499,7 +1510,7 @@ Some ways to mitigate shock danger are.\\
 \frametitle{Fuses}
 Fuses are your friend.\\
 Fuses are designed to open a circuit when overloaded, they burn so you and your equipment don't.\\
-Always be sure to use the proper fuse, they are rated for voltage, current, and slow/fast burn
+Always be sure to use the proper fuse, they are rated for voltage, current, and slow/fast burn. Also think about why a fuse burned when replacing it. Many a electronics tinkerer has burned through a pack a fuses by not fixing a problem. 
 \end{frame}
 
 \begin{frame}
@@ -1521,7 +1532,7 @@ The current standard code for electrical wiring in the US calls for 3-prong outl
 
 \begin{frame}
 \frametitle{GFCI}
-In some cases a Ground Fault Circuit Interrupter may be required by code. These devices open the circuit if there is a current imbalance between the hot and common lines. They look like normally outlets with two buttons on them. These provide an extra level of protection especially in locations such as outdoors or bathrooms. Though be aware that some devices may not function properly when connected to GFCI protected circuits, namely devices with their own GFCI installed.
+In some cases a Ground Fault Circuit Interrupter may be required by code. These devices open the circuit if there is a current imbalance between the hot and common lines. They look like normally outlets with two buttons on them. These provide an extra level of protection especially in locations such as outdoors or bathrooms. Though be aware that some devices may not function properly when connected to GFCI protected circuits, namely devices with their own GFCI installed. As with fuses if a GFCI or circuit breaker has tripped, try to find out why before resetting.
 \end{frame}
 
 \begin{frame}
