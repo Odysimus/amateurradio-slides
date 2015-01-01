@@ -89,3 +89,8 @@
 
 # Cleanup tool
 cleanup.sh
+
+#releases
+*.zip
+*.tar
+*.tar.gz
